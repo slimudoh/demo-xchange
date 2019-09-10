@@ -27,7 +27,6 @@ function watch() {
   // gulp.watch("src/js/*.js", xjs);
 }
 
-// const build = gulp.parallel(xless, xjs, watch);
 const build = gulp.parallel(xless, watch);
 gulp.task(build);
 gulp.task("default", build);
