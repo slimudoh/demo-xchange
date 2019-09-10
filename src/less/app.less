@@ -1,0 +1,51 @@
+@import url('./reset.css');
+
+.homepage {
+    padding-top: 20px;
+    text-align: center;
+
+    >h2 {
+        color: #707070;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    >.homepage__container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 0 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+        >div {
+            width: 20%;
+
+            >a {
+                color: #707070;
+                text-decoration: none;
+
+                >div {
+                    width: 100%;
+                    border: 1px solid #707070;
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    border-radius: 4px;
+                    color: #707070;
+                    padding: 10px 0;
+
+                    &:hover {
+                        background-color: #ddd;
+                    }
+                }
+            }
+
+        }
+    }
+}

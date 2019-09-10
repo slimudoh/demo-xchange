@@ -1,0 +1,43 @@
+@import url('./reset.css');
+.homepage {
+  padding-top: 20px;
+  text-align: center;
+}
+.homepage > h2 {
+  color: #707070;
+  font-size: 20px;
+  margin: 20px 0;
+}
+.homepage > .homepage__container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.homepage > .homepage__container > div {
+  width: 20%;
+}
+.homepage > .homepage__container > div > a {
+  color: #707070;
+  text-decoration: none;
+}
+.homepage > .homepage__container > div > a > div {
+  width: 100%;
+  border: 1px solid #707070;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 4px;
+  color: #707070;
+  padding: 10px 0;
+}
+.homepage > .homepage__container > div > a > div:hover {
+  background-color: #ddd;
+}
