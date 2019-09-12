@@ -41,3 +41,217 @@
 .homepage > .homepage__container > div > a > div:hover {
   background-color: #ddd;
 }
+.header {
+  height: 80px;
+  background: #FFFFFF;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+@media (max-width: 800px) {
+  .header {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    padding: 0 10px;
+  }
+}
+.header > .header__logo {
+  width: 150px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 0;
+  color: #707070;
+}
+.header > .header__nav {
+  width: 360px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+.header > .header__nav > div {
+  width: 100px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #707070;
+  padding: 10px 0;
+  position: relative;
+}
+.header > .header__nav > div > a {
+  color: #707070;
+  text-decoration: none;
+}
+.header > .header__nav > div > div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 60px;
+  background: #C7C7C7;
+}
+.account {
+  padding: 0 10px;
+}
+.account > div {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px 0;
+}
+.account > div > span {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0;
+  color: #707070;
+}
+.account > div > div {
+  margin: 20px 0;
+}
+.account > div > div > .account__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  height: 80px;
+  padding: 0 50px;
+  border: 1px solid #C7C7C7;
+  cursor: pointer;
+}
+.account > div > div > .account__container > .account__container--name {
+  width: 100px;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+.account > div > div > .account__container > .account__container--arrow {
+  width: 20px;
+  text-align: center;
+}
+.account > div > div > .personal {
+  background: #C7C7C7;
+  color: #fff;
+}
+.account > div > div > .document {
+  background: #fff;
+  color: #707070;
+}
+.account > div > div > .acc {
+  background: #fff;
+  color: #707070;
+}
+.account > div > div > .account__container--dropdown {
+  padding: 50px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+}
+.account > div > div > .account__container--dropdown > h3 {
+  letter-spacing: 0;
+  color: #707070;
+}
+.account > div > div > .account__container--dropdown > div {
+  margin-top: 10px;
+  overflow: hidden;
+}
+.account > div > div > .account__container--dropdown > div > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+.account > div > div > .account__container--dropdown > div > div > .personal__input--half {
+  width: 48%;
+  margin-bottom: 20px;
+}
+.account > div > div > .account__container--dropdown > div > div > .personal__input--half > label {
+  letter-spacing: 0;
+  color: #707070;
+  opacity: 1;
+  font-size: 13px;
+  font-weight: 600;
+}
+.account > div > div > .account__container--dropdown > div > div > .personal__input--half > input {
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+  margin-top: 7px;
+  width: 100%;
+  height: 40px;
+  outline: 0;
+  padding: 0 10px;
+  font-size: 13px;
+  opacity: 1;
+}
+.account > div > div > .account__container--dropdown > div > div > .personal__input--full {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.account > div > div > .account__container--dropdown > div > div > .personal__input--full > label {
+  letter-spacing: 0;
+  color: #707070;
+  opacity: 1;
+  font-size: 13px;
+  font-weight: 600;
+}
+.account > div > div > .account__container--dropdown > div > div > .personal__input--full > input {
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+  margin-top: 7px;
+  width: 100%;
+  height: 40px;
+  outline: 0;
+  padding: 0 10px;
+  font-size: 13px;
+  opacity: 1;
+}
+.account > div > div > .account__container--dropdown > div > div > .personal__input--full > select {
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+  margin-top: 7px;
+  width: 100%;
+  height: 40px;
+  outline: 0;
+  padding: 0 10px;
+  font-size: 13px;
+  opacity: 1;
+}
+.account > div > div > .account__container--dropdown > div > div > .personal__input--full > .btn {
+  width: 100px;
+  height: 40px;
+  margin: auto;
+  background: #FFFFFF;
+  border: 1px solid #777777;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 12px;
+}
+.account > div > div > .account__container--save {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #777777;
+  border-radius: 5px;
+  margin: 40px auto;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 12px;
+  cursor: pointer;
+}
