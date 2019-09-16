@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon.ico" />
+    <meta name="application-name" content="Application Name" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="author" content="Q" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link href="./assets//fontawesome/css/all.css" rel="stylesheet" />
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo"><a href="/">TROPERIAL</a></div>
+      <div class="header__nav">
+        <div>
+          <a href="messages.html">Messages</a>
+          <div class="header__nav--inactive "></div>
+        </div>
+        <div>
+          <a href="history.html"> Your History</a>
+          <div class="header__nav--inactive "></div>
+        </div>
+        <div>
+          <a href="account.html">Your Account</a>
+          <div class="header__nav--inactive"></div>
+        </div>
+      </div>
+    </header>
+    <section class="user-dashboard">
+      <div>
+        <div class="user-dashboard__list">
+          <div class="user-dashboard__list-header">
+            <div>
+              List on Trading Floor
+            </div>
+          </div>
+          <div class="user-dashboard__list-container">
+            <div class="user-dashboard__list-container-text">
+              PS: Since the transaction rate will be determined by you and
+              someone else on the trading floor, only one of the currency input
+              boxes will be active.
+            </div>
+            <div class="user-dashboard__list-container-form">
+              <div>
+                <p>Currency at hand</p>
+                <div>
+                  <div class="user-dashboard__list-container-form-half">
+                    <input type="text" value="$100.00 USD" />
+                  </div>
+                  <div class="user-dashboard__list-container-form-half">
+                    <select>
+                      <option value="test">
+                        USD
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <p>
+                &#8595;
+              </p>
+              <div>
+                <p>Currency needed</p>
+                <div>
+                  <div class="user-dashboard__list-container-form-half">
+                    <input type="text" value="NGN" />
+                  </div>
+                  <div class="user-dashboard__list-container-form-half">
+                    <select>
+                      <option value="test">
+                        NGN
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="user-dashboard__list-container-btn">
+              <div>
+                SUBMIT
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="user-dashboard__floor">
+          <p>Trading Floor</p>
+          <div class="user-dashboard__floor--filter">
+            <div class="user-dashboard__floor--filter-input">
+              <div class="user-dashboard__floor--filter-input-text">
+                Filter Deals by List Period:
+              </div>
+              <div class="user-dashboard__floor--filter-input-list">
+                <select>
+                  <option value="demo">Today</option>
+                </select>
+              </div>
+            </div>
+            <div class="user-dashboard__floor--filter-page">
+              Showing 1-10 of 100 deals
+            </div>
+          </div>
+          <div class="user-dashboard__floor--table">
+            <div class="user-dashboard__floor--table-head">
+              <div>Name</div>
+              <div>Date</div>
+              <div>Currency at hand</div>
+              <div>Currency Needed</div>
+              <div>Status</div>
+              <div>Action</div>
+            </div>
+            <div class="user-dashboard__floor--table-body">
+              <div>
+                <div>Bosun Wunmi</div>
+                <div>
+                  <p>06/09/2019 <br />10:54 AM</p>
+                </div>
+                <div>
+                  <div>Naira</div>
+                  <div>
+                    <img src="./assets/img/flags/nigeria.svg" alt= /> N10,000
+                  </div>
+                </div>
+                <div>
+                  <div>US Dollars</div>
+                  <div><img src="./assets/img/flags/us.svg" alt= /></div>
+                </div>
+                <div><span>Pending</span></div>
+                <div><a href="negotiate.html">Contact Bosun</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
