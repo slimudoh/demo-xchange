@@ -1187,6 +1187,63 @@
   color: #707070;
   font-size: 8px;
 }
+.user-dashboard > div > .account-container {
+  width: 65%;
+  background-color: #fff;
+  padding: 20px;
+}
+.user-dashboard > div > .account-container > p {
+  text-align: right;
+  letter-spacing: 0.54px;
+  color: #777777;
+  font-size: 12px;
+}
+.user-dashboard > div > .account-container > div > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  padding: 20px 0;
+  margin: 10px 0;
+}
+.user-dashboard > div > .account-container > div > div > div {
+  width: 33.3333333%;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  font-weight: 600;
+}
+.user-dashboard > div > .account-container > div > div > div > span {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  font-weight: normal;
+}
+.user-dashboard > div > .account-container > div > div > div > p {
+  margin-top: 10px;
+  text-align: center;
+}
+.user-dashboard > div > .account-container > div > div > div > p > span {
+  font-size: 9px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+.user-dashboard > div > .account-container > div > div > div > div {
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0;
+  color: #707070;
+  width: 100px;
+  margin: auto;
+}
 .user-dashboard > div > .historybox {
   width: 30%;
   background-color: #fff;
