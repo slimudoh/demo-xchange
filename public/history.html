@@ -40,60 +40,94 @@
           &#8592; Go back to dashboard
         </a>
       </p>
+      <p>
+        <span>Basic Info</span>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <span><strong>Transaction History</strong> </span>
+      </p>
       <div>
-        <div class="messagebox">
-          <p>
-            Messages
-          </p>
-          <div>
+        <div class="historybox">
+          <p>Edit</p>
+          <div class="historybox__avatar">
+            <div class="historybox__avatar--image">
+              <img src="./assets/img/profile.svg" alt="" />
+            </div>
+            <div class="historybox__avatar--name">
+              Change picture
+              <input type="file" />
+            </div>
+          </div>
+          <div class="historybox__details">
+            <span>Bosun Wunmi</span>
+            <p>
+              - Account ID: AC_EGGYRVHJF7J8
+              <br />
+              - Joined January 31 ,2019
+              <br />
+              - Number of closed deals: 15
+            </p>
+          </div>
+          <div class="historybox__media">
             <div>
-              <div class="messagebox__avatar">
-                <div>
-                  <img src="./assets/img/profile.svg" alt="" />
-                </div>
-              </div>
-              <div class="messagebox__details">
-                <h4>John Doe</h4>
-                <p>Will you send it over?</p>
-                <span>2:54 am</span>
-              </div>
+              <p><i class="fab fa-facebook-square"></i></p>
+              facebook.com/bosunwunmi
+            </div>
+            <div>
+              <p><i class="fab fa-twitter-square"></i></p>
+              twitter.com/bosunwunmi
             </div>
           </div>
         </div>
 
-        <div class="user-dashboard__chat">
-          <p>Your chat with Bosun Wunmi</p>
-          <div class="user-dashboard__chat--header">
-            <p>Deal ID: TR/01/1000</p>
-            <div>CLOSE DEAL</div>
+        <div class="history-container">
+          <div class="history-container__header">
+            <div>S/N</div>
+            <div>Transaction ID</div>
+            <div>Amount</div>
+            <div>Deal Status</div>
+            <div></div>
           </div>
-          <div class="user-dashboard__chat--messages">
-            <div class="user-dashboard__chat--messages-sender">
+          <div class="history-container__body">
+            <div>
+              <div>1</div>
+              <div>001</div>
+              <div>$15,000</div>
               <div>
-                <div class="user-dashboard__chat--messages-sender-avatar">
-                  <div></div>
-                </div>
-                <div class="user-dashboard__chat--messages-sender-post"></div>
-              </div>
-            </div>
-            <div class="user-dashboard__chat--messages-reciever">
-              <div>
-                <div class="user-dashboard__chat--messages-reciever-post"></div>
-                <div class="user-dashboard__chat--messages-reciever-avatar">
-                  <div></div>
+                <div>
+                  PENDING
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="user-dashboard__chat--btns">
-            <div class="user-dashboard__chat--btns-input">
-              <textarea placeholder="Type a message..."></textarea>
               <div>
-                <img src="./assets/img/smile.svg" alt="" />
+                <span>Remove Deal</span>
               </div>
             </div>
-            <div class="user-dashboard__chat--btns-send">
-              <div><i class="fas fa-paper-plane"></i></div>
+
+            <div>
+              <div>2</div>
+              <div>001</div>
+              <div>$15,000</div>
+              <div>
+                <div>
+                  PENDING
+                </div>
+              </div>
+              <div>
+                <span>Remove Deal</span>
+              </div>
+            </div>
+
+            <div>
+              <div>3</div>
+              <div>001</div>
+              <div>$15,000</div>
+              <div>
+                <div>
+                  PENDING
+                </div>
+              </div>
+              <div>
+                <span>Remove Deal</span>
+              </div>
             </div>
           </div>
         </div>
