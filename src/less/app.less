@@ -163,6 +163,59 @@
       }
     }
   }
+
+  >.dashboard__nav {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+
+    >div {
+      width: 100px;
+      text-align: center;
+      letter-spacing: 0;
+      color: #707070;
+      padding: 10px 0;
+      position: relative;
+
+      >a {
+        color: #707070;
+        text-decoration: none;
+        font-size: 13px;
+      }
+
+      &:hover {
+        >.header__nav--inactive {
+          display: block;
+        }
+      }
+
+      >.header__nav--active {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        width: 10px;
+        height: 10px;
+        border-radius: 60px;
+        background: #c7c7c7;
+        display: block;
+      }
+
+      >.header__nav--inactive {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        width: 10px;
+        height: 10px;
+        border-radius: 60px;
+        background: #c7c7c7;
+        display: none;
+      }
+    }
+  }
 }
 
 .signup {
@@ -313,22 +366,22 @@
               }
 
               >.btn {
-                width: 100px;               
+                width: 100px;
                 margin: auto;
                 background: #ffffff;
                 border: 1px solid #777777;
                 border-radius: 5px;
-                text-align: center;                
+                text-align: center;
                 overflow: hidden;
 
-                > a {
+                >a {
                   color: #707070;
 
-                  > div {
+                  >div {
                     width: 100%;
                     height: 40px;
                     font-size: 10px;
-                padding-top: 14px;
+                    padding-top: 14px;
 
                   }
                 }
@@ -704,17 +757,17 @@
         border: 1px solid #777777;
         border-radius: 5px;
         margin: 40px auto;
-        overflow: hidden;        
+        overflow: hidden;
         cursor: pointer;
 
-        > a {
+        >a {
           text-decoration: none;
           color: #707070;
 
-          > div {
+          >div {
             font-size: 10px;
-        text-align: center;
-        padding-top: 14px;
+            text-align: center;
+            padding-top: 14px;
 
           }
         }
@@ -920,24 +973,24 @@
           padding-top: 20px;
 
           >div {
-            width: 100px;            
+            width: 100px;
             background: #c7c7c7;
             border-radius: 5px;
             overflow: hidden;
-            
 
-            > a {
+
+            >a {
               color: #fff;
               text-decoration: none;
 
 
-              > div {
+              >div {
                 width: 100%;
                 font-size: 10px;
                 letter-spacing: 0;
                 color: #ffffff;
                 padding: 12px 0;
-            text-align: center;
+                text-align: center;
               }
             }
           }
@@ -1157,9 +1210,9 @@
           border: 1px solid #707070;
           border-radius: 5px;
           overflow: hidden;
-         
 
-          > a {
+
+          >a {
             div {
               width: 100%;
               letter-spacing: 0;
@@ -1438,11 +1491,11 @@
               font-weight: normal;
             }
 
-            > p {
+            >p {
               margin-top: 10px;
               text-align: center;
 
-              > span {
+              >span {
                 font-size: 9px;
                 font-weight: normal;
                 text-decoration: underline;
@@ -1456,10 +1509,10 @@
               padding: 10px 0;
               text-align: center;
               font-size: 10px;
-letter-spacing: 0;
-color: #707070;
-width: 100px;
-margin: auto;
+              letter-spacing: 0;
+              color: #707070;
+              width: 100px;
+              margin: auto;
             }
 
           }
@@ -1696,17 +1749,17 @@ margin: auto;
         border-radius: 5px;
         width: 100px;
         margin: auto;
-       
 
-        > a {
-          > div {
+
+        >a {
+          >div {
             width: 100%;
             height: 40px;
             font-size: 12px;
             color: #ffffff;
             text-align: center;
             padding-top: 12px;
-            
+
           }
         }
       }
@@ -1811,6 +1864,194 @@ margin: auto;
       padding-top: 12px;
       padding-bottom: 10px;
       font-weight: 600;
+    }
+  }
+}
+
+.admin-dashboard {
+  padding: 0 50px 100px 50px;
+
+  >p {
+    text-align: left;
+    letter-spacing: 0;
+    color: #707070;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  >div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+
+    >.admin-dashboard--half-transp {
+      width: 50%;
+      padding: 50px;
+
+      >h3 {
+        text-align: left;
+        letter-spacing: 0;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 600;
+
+      }
+
+      >div {
+        text-align: left;
+        letter-spacing: 0;
+        color: #000000;
+        font-size: 12px;
+        margin-top: 20px;
+
+      }
+
+    }
+
+    >.admin-dashboard--half-color {
+      width: 50%;
+      padding: 50px;
+
+      >div {
+        background: #FFFFFF;
+        box-shadow: 0px 1px 3px #D9D9D9FA;
+        border-radius: 5px;
+        padding: 20px;
+
+        >.admin-dashboard--half-color--table {
+
+
+          >.admin-dashboard--half-color--table-head {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            padding: 20px 10px;
+
+            >div {
+              width: 50%;
+              text-align: left;
+              letter-spacing: 0;
+              color: #777777;
+              font-size: 10px;
+            }
+          }
+
+          >.admin-dashboard--half-color--table-body {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            justify-content: center;
+            align-content: center;
+            background: #FAFAFA;
+            padding: 20px 10px;
+
+            >div {
+              width: 50%;
+
+              >span {
+                text-align: left;
+                letter-spacing: 0;
+                color: #000000;
+                font-size: 12px;
+              }
+
+              >p {
+                text-align: left;
+                letter-spacing: 0;
+                color: #707070;
+                font-size: 10px;
+                margin: 10px;
+              }
+
+            }
+          }
+
+
+        }
+
+        >.admin-dashboard--half-color--add {
+          text-align: left;
+          letter-spacing: 0;
+          color: #777777;
+          font-size: 10px;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    >.admin-dashboard__traders {
+
+      >.admin-dashboard__traders--head {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        background: #C7C7C7;
+        height: 50px;
+        padding: 0 20px;
+
+        >div {
+          width: 16.66666666666667%;
+          text-align: left;
+          letter-spacing: 0;
+          color: #FFFFFF;
+          font-size: 12px;
+
+        }
+
+
+      }
+
+      >.admin-dashboard__traders--body {
+        >div {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: center;
+          align-content: center;
+          background: #C7C7C7;
+          height: 60px;
+          padding: 0 20px;
+          margin: 20px 0;
+          background: #FFFFFF;
+
+          >div {
+            width: 16.66666666666667%;
+            text-align: left;
+            letter-spacing: 0;
+            font-size: 12px;
+            color: #707070;
+
+            >div {
+              width: 100px;
+              margin: auto;
+              text-align: center;
+              padding: 10px 0;
+              background: #C7C7C7;
+              border-radius: 5px;
+              letter-spacing: 0;
+              color: #FFFFFF;
+              font-size: 10px;
+            }
+
+          }
+        }
+
+
+
+
+      }
     }
   }
 }

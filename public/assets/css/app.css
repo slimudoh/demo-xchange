@@ -147,6 +147,51 @@
   background: #c7c7c7;
   display: none;
 }
+.header > .dashboard__nav {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+.header > .dashboard__nav > div {
+  width: 100px;
+  text-align: center;
+  letter-spacing: 0;
+  color: #707070;
+  padding: 10px 0;
+  position: relative;
+}
+.header > .dashboard__nav > div > a {
+  color: #707070;
+  text-decoration: none;
+  font-size: 13px;
+}
+.header > .dashboard__nav > div:hover > .header__nav--inactive {
+  display: block;
+}
+.header > .dashboard__nav > div > .header__nav--active {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 60px;
+  background: #c7c7c7;
+  display: block;
+}
+.header > .dashboard__nav > div > .header__nav--inactive {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 60px;
+  background: #c7c7c7;
+  display: none;
+}
 .signup {
   padding: 0 50px 100px 50px;
 }
@@ -1550,4 +1595,149 @@
   padding-top: 12px;
   padding-bottom: 10px;
   font-weight: 600;
+}
+.admin-dashboard {
+  padding: 0 50px 100px 50px;
+}
+.admin-dashboard > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.admin-dashboard > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+}
+.admin-dashboard > div > .admin-dashboard--half-transp {
+  width: 50%;
+  padding: 50px;
+}
+.admin-dashboard > div > .admin-dashboard--half-transp > h3 {
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.admin-dashboard > div > .admin-dashboard--half-transp > div {
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.admin-dashboard > div > .admin-dashboard--half-color {
+  width: 50%;
+  padding: 50px;
+}
+.admin-dashboard > div > .admin-dashboard--half-color > div {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px #D9D9D9FA;
+  border-radius: 5px;
+  padding: 20px;
+}
+.admin-dashboard > div > .admin-dashboard--half-color > div > .admin-dashboard--half-color--table > .admin-dashboard--half-color--table-head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 20px 10px;
+}
+.admin-dashboard > div > .admin-dashboard--half-color > div > .admin-dashboard--half-color--table > .admin-dashboard--half-color--table-head > div {
+  width: 50%;
+  text-align: left;
+  letter-spacing: 0;
+  color: #777777;
+  font-size: 10px;
+}
+.admin-dashboard > div > .admin-dashboard--half-color > div > .admin-dashboard--half-color--table > .admin-dashboard--half-color--table-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  background: #FAFAFA;
+  padding: 20px 10px;
+}
+.admin-dashboard > div > .admin-dashboard--half-color > div > .admin-dashboard--half-color--table > .admin-dashboard--half-color--table-body > div {
+  width: 50%;
+}
+.admin-dashboard > div > .admin-dashboard--half-color > div > .admin-dashboard--half-color--table > .admin-dashboard--half-color--table-body > div > span {
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 12px;
+}
+.admin-dashboard > div > .admin-dashboard--half-color > div > .admin-dashboard--half-color--table > .admin-dashboard--half-color--table-body > div > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 10px;
+  margin: 10px;
+}
+.admin-dashboard > div > .admin-dashboard--half-color > div > .admin-dashboard--half-color--add {
+  text-align: left;
+  letter-spacing: 0;
+  color: #777777;
+  font-size: 10px;
+  margin-top: 10px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__traders--head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background: #C7C7C7;
+  height: 50px;
+  padding: 0 20px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__traders--head > div {
+  width: 16.66666667%;
+  text-align: left;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__traders--body > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background: #C7C7C7;
+  height: 60px;
+  padding: 0 20px;
+  margin: 20px 0;
+  background: #FFFFFF;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__traders--body > div > div {
+  width: 16.66666667%;
+  text-align: left;
+  letter-spacing: 0;
+  font-size: 12px;
+  color: #707070;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__traders--body > div > div > div {
+  width: 100px;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+  background: #C7C7C7;
+  border-radius: 5px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  font-size: 10px;
 }
