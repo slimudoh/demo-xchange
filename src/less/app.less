@@ -1220,7 +1220,6 @@
               text-align: center;
               padding: 10px 0;
               font-size: 10px;
-
             }
           }
         }
@@ -1987,6 +1986,117 @@
       }
     }
 
+    >.admin-dashboard__filter {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      align-content: center;
+
+      >.admin-dashboard__traders--select {
+        width: 250px;
+        display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      align-content: center;
+
+        > div {
+          width: 45%;
+          background: #FFFFFF;
+          border: 1px solid #C7C7C7;
+          border-radius: 5px;
+
+          > select {
+            width: 100%;
+            height: 40px;
+            border: 0;
+            outline: 0;
+            padding: 0 5px;
+            text-align: left;
+            letter-spacing: 0;
+            color: #707070;
+            font-size: 12px;
+          }
+        }
+      
+      }
+
+      >.admin-dashboard__traders--input {
+        width: 400px;
+         display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      align-content: center;
+
+        >.admin-dashboard__traders--input-print {
+          width: 70px;
+          height: 40px;
+          background: #FFFFFF;
+          border: 1px solid #C7C7C7;
+          border-radius: 5px;
+          letter-spacing: 0;
+          color: #707070;
+          font-size: 10px;
+          padding-top: 12px;
+          text-align: center;
+        }
+
+        >.admin-dashboard__traders--input-export {
+           width: 70px;
+          height: 40px;
+          background: #FFFFFF;
+          border: 1px solid #C7C7C7;
+          border-radius: 5px;
+          letter-spacing: 0;
+          color: #707070;
+          font-size: 10px;
+          padding-top: 12px;
+          text-align: center;
+        }
+
+        >.admin-dashboard__traders--input-search {
+           width: 200px;
+          height: 40px;
+          background: #FFFFFF;
+          border: 1px solid #C7C7C7;
+          border-radius: 5px;
+          position: relative;
+          overflow: hidden;
+
+          > input {
+            width: 100%;
+            height: 40px;
+            border: 0;
+            outline: 0;
+            text-align: left;
+            letter-spacing: 0;
+            color: #707070;
+            font-size: 12px;
+            padding: 0 5px 0 45px;
+          }
+
+          > div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 100%;
+            background-color: #fff;
+            color: #C7C7C7;
+            text-align: center;
+            padding-top: 10px;
+          }
+        }
+      
+      }
+
+    }
+
     >.admin-dashboard__traders {
 
       >.admin-dashboard__traders--head {
@@ -2006,13 +2116,13 @@
           letter-spacing: 0;
           color: #FFFFFF;
           font-size: 12px;
-
         }
 
 
       }
 
       >.admin-dashboard__traders--body {
+        
         >div {
           display: flex;
           flex-direction: row;
@@ -2035,7 +2145,7 @@
 
             >div {
               width: 100px;
-              margin: auto;
+              // margin: auto;
               text-align: center;
               padding: 10px 0;
               background: #C7C7C7;
@@ -2047,11 +2157,290 @@
 
           }
         }
+      }
 
+      >.admin-dashboard__transact--body {
+        
+        >div {
+         
 
+          > .admin-dashboard__transact--body-item {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            background: #C7C7C7;
+            height: 60px;
+            padding: 0 20px;
+            margin-top: 20px;
+            background: #FFFFFF;
+            position: relative;
 
+            >div {
+              width: 16.66666666666667%;
+              text-align: left;
+              letter-spacing: 0;
+              font-size: 12px;
+              color: #707070;
+  
+              >div {
+                width: 100px;
+                // margin: auto;
+                text-align: center;
+                padding: 10px 0;
+                background: #C7C7C7;
+                border-radius: 5px;
+                letter-spacing: 0;
+                color: #FFFFFF;
+                font-size: 10px;
+              }
+  
+            }
+  
+            > p {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+            height: 100%;
+            text-align: center;
+            padding-top: 20px;
+            color: #C7C7C7;
+          }
+
+          }
+
+          > .admin-dashboard__transact--body-dd {
+            background: #FFFFFF;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: nowrap;
+              align-items: flex-start;
+              justify-content: center;
+              align-content: center;
+              margin-bottom: 20px;
+              border: 1px solid #C7C7C74D;
+
+              > .admin-dashboard__transact--body-dd-left {
+                width: 40%;
+                padding: 10px 20px;
+
+                > div {
+                  margin: 20px 0;
+                  > p {
+                    text-align: left;
+                    letter-spacing: 0;
+                    color: #707070;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 600;
+                  }
+
+                  > div {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    justify-content: center;
+                    align-content: center;
+                    margin-top: 20px;
+
+                     > div {
+                       > span {
+                        text-align: left;
+                        letter-spacing: 0;
+                        color: #B2B2B2;
+                        text-transform: capitalize;
+                        font-size: 10px;
+                       }
+
+                       > p {
+                        text-align: left;
+                        letter-spacing: 0;
+                        color: #707070;
+                        text-transform: capitalize;
+                        font-size: 10px;
+                        margin-top: 10px;
+                       }
+                     }
+
+                  }
+                }
+
+              }
+
+              > .admin-dashboard__transact--body-dd-middle {
+                width: 20%;
+                padding: 20px;
+
+                > p {
+                  text-align: left;
+                  letter-spacing: 0;
+                  color: #707070;
+                  text-transform: uppercase;
+                  font-size: 12px;
+                  font-weight: 600;
+                }
+
+                > div {
+                  margin-top: 10px;
+                  position: relative;
+
+                  > .admin-dashboard__transact--body-dd-middle-line {
+                    width: 2px;
+                    height: 300px;
+                    background: #C7C7C7;
+                    border-radius: 3px;
+                  }
+
+                  > .admin-dashboard__transact--body-dd-middle-items {
+                    position: absolute;
+                    top: 0;
+                    left: -4px;
+                    height: 300px;
+
+                   > div {
+                     width: 100px;
+                     margin: 10px 0 50px 0;
+                     overflow: hidden;
+                     display: flex;
+                     flex-direction: row;
+                     flex-wrap: nowrap;
+                     align-items: center;
+                     justify-content: flex-start;
+                     align-content: center;
+
+                     > .transact__point {
+                       width: 10px;
+                       height: 10px;
+                       border-radius: 60px;
+                       background: #707070;
+                     }
+
+                     > .transact__level {                      
+                       width: calc(100% - 10px);
+                      padding: 0 5px;
+
+                      > span {
+                        text-align: left;
+                      letter-spacing: 0;
+                      color: #707070;
+                      font-size: 8px;
+
+                      }
+
+                      > p {
+                        text-align: left;
+                        letter-spacing: 0;
+                        color: #B1B1B1;
+                        font-size: 6px;
+                        margin-top: 3px;
+                      }
+                     }
+                   }
+                  }
+                }
+              }
+
+              > .admin-dashboard__transact--body-dd-right {
+                width: 40%;
+                padding: 20px;
+
+                > p {
+                  text-align: left;
+                  letter-spacing: 0;
+                  color: #707070;
+                  text-transform: uppercase;
+                  font-size: 12px;
+                  font-weight: 600;
+                }
+
+                > div {
+                  background: #C7C7C7;
+                  border-radius: 5px;
+                  width: 100px;
+                  height: 40px;
+                  padding-top: 12px;
+                  text-align: center;
+                  letter-spacing: 0;
+                  color: #FBF8F8;
+                  font-size: 12px;
+                  margin-top: 20px;
+                }
+              }
+          }
+
+     
+        }
+      }
+    }
+    }
+  }
+
+  .admin-page {
+    padding: 50px 50px 100px 50px;
+    
+    
+    > .admin-page__currency {
+      width: 500px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      align-content: center;
+
+      >  .admin-page__currency--amount  {
+        width: 150px;
+
+        > span {
+          text-align: left;
+          letter-spacing: 0;
+          color: #B1B1B1;
+          font-size: 10px;
+        }
+          > p {
+          text-align: left;
+          letter-spacing: 0;
+          color: #777777;
+          font-size: 12px;
+          font-weight: 600;
+          margin-top: 10px;
+        }  
+        }
+    }  
+
+      .admin-page__currency--country  {
+        width: 200px;
+
+        > span {
+          text-align: left;
+          letter-spacing: 0;
+          color: #B1B1B1;
+          font-size: 10px;
+        }
+
+        > div {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: flex-start;
+          justify-content: center;
+          align-content: center;
+          margin-top: 10px;
+
+          > div {
+            width: 50px;
+            text-align: left;
+            letter-spacing: 0;
+            color: #707070;
+            font-size: 12px;
+            font-weight: 600;
+          }
+
+        }
 
       }
     }
-  }
-}
