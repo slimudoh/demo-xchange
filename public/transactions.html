@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon.ico" />
+    <meta name="application-name" content="Application Name" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="author" content="Q" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link href="./assets//fontawesome/css/all.css" rel="stylesheet" />
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo"><a href="/">TROPERIAL</a></div>
+      <div class="dashboard__nav">
+        <div>
+          <a href="dashboard.html">Dashboard</a>
+          <div class="header__nav--inactive "></div>
+        </div>
+        <div>
+          <a href="traders.html">Traders</a>
+          <div class="header__nav--inactive "></div>
+        </div>
+        <div>
+          <a href="transactions.html">Transactions</a>
+          <div class="header__nav--active "></div>
+        </div>
+        <div>
+          <a href="dashmessages.html"> Messages</a>
+          <div class="header__nav--inactive "></div>
+        </div>
+        <div>
+          <a href="dashaccount.html">Your Account</a>
+          <div class="header__nav--inactive "></div>
+        </div>
+      </div>
+    </header>
+    <section class="admin-dashboard">
+      <p>
+        All Transactions
+      </p>
+      <div>
+        <div class="admin-dashboard__filter">
+          <div class="admin-dashboard__traders--select">
+            <div>
+              <select>
+                <option value="Date Range">Date Range</option>
+              </select>
+            </div>
+            <div>
+              <select>
+                <option value="Status">Status</option>
+              </select>
+            </div>
+          </div>
+          <div class="admin-dashboard__traders--input">
+            <div class="admin-dashboard__traders--input-print">
+              Print
+            </div>
+            <div class="admin-dashboard__traders--input-export">
+              Export
+            </div>
+            <div class="admin-dashboard__traders--input-search">
+              <input type="text" placeholder=" Search transactions" />
+              <div><i class="fas fa-search"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="admin-dashboard__traders">
+          <div class="admin-dashboard__traders--head">
+            <div>Transaction Date and Time</div>
+            <div>Transaction ID</div>
+            <div>Lister Name</div>
+            <div>Buyer's Name</div>
+            <div>Status</div>
+            <div>Amount</div>
+          </div>
+
+          <div class="admin-dashboard__transact--body">
+            <div>
+              <div class="admin-dashboard__transact--body-item">
+                <div>
+                  Jun 15 2018 - 8:09AM
+                </div>
+                <div>1716272537263</div>
+                <div>Bosun Bosun</div>
+                <div>Wunmi Wunmi</div>
+                <div>
+                  <div>Sucess</div>
+                </div>
+                <div>
+                  N10,000 NGN
+                </div>
+                <p>
+                  <i class="fas fa-chevron-right"></i>
+                </p>
+              </div>
+              <div class="admin-dashboard__transact--body-dd">
+                <div class="admin-dashboard__transact--body-dd-left">
+                  <div>
+                    <p>Lister Profile</p>
+                    <div>
+                      <div>
+                        <span>Full Name</span>
+                        <p>bosun Bosun</p>
+                      </div>
+                      <div>
+                        <span>Account ID</span>
+                        <p>1389373493</p>
+                      </div>
+                      <div>
+                        <span>Amount Listed</span>
+                        <p>$3,000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div>
+                    <p>buyer Profile</p>
+                    <div>
+                      <div>
+                        <span>Full Name</span>
+                        <p>bosun Bosun</p>
+                      </div>
+                      <div>
+                        <span>Account ID</span>
+                        <p>1389373493</p>
+                      </div>
+                      <div>
+                        <span>Amount Listed</span>
+                        <p>$3,000</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin-dashboard__transact--body-dd-middle">
+                  <p>LOG</p>
+                  <div>
+                    <div class="admin-dashboard__transact--body-dd-middle-line"></div>
+                    <div class="admin-dashboard__transact--body-dd-middle-items">
+                      <div>
+                          <div class="transact__point"></div>
+                          <div class="transact__level">
+                            <span>Request Created</span>
+                              <p>April 15 2018 - 02:44AM</p>
+                          </div>                          
+                      </div>
+                      <div>
+                          <div class="transact__point"></div>
+                          <div class="transact__level">
+                            <span>Chat Initiated</span>
+                              <p>April 15 2018 - 02:44AM</p>
+                          </div>                          
+                      </div>
+
+                      <div>
+                          <div class="transact__point"></div>
+                          <div class="transact__level">
+                            <span>Deal Closed</span>
+                              <p>April 15 2018 - 02:44AM</p>
+                          </div>                          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin-dashboard__transact--body-dd-right">
+                  <p>Chat Report</p>
+                  <div>View report</div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="admin-dashboard__transact--body-item">
+                <div>
+                  Jun 15 2018 - 8:09AM
+                </div>
+                <div>1716272537263</div>
+                <div>Bosun Bosun</div>
+                <div>Wunmi Wunmi</div>
+                <div>
+                  <div>Sucess</div>
+                </div>
+                <div>
+                  N10,000 NGN
+                </div>
+                <p>
+                  <i class="fas fa-chevron-right"></i>
+                </p>
+              </div>
+              
+            </div>
+
+            <div>
+              <div class="admin-dashboard__transact--body-item">
+                <div>
+                  Jun 15 2018 - 8:09AM
+                </div>
+                <div>1716272537263</div>
+                <div>Bosun Bosun</div>
+                <div>Wunmi Wunmi</div>
+                <div>
+                  <div>Sucess</div>
+                </div>
+                <div>
+                  N10,000 NGN
+                </div>
+                <p>
+                  <i class="fas fa-chevron-right"></i>
+                </p>
+              </div>
+              
+            </div>
+
+             <div>
+              <div class="admin-dashboard__transact--body-item">
+                <div>
+                  Jun 15 2018 - 8:09AM
+                </div>
+                <div>1716272537263</div>
+                <div>Bosun Bosun</div>
+                <div>Wunmi Wunmi</div>
+                <div>
+                  <div>Sucess</div>
+                </div>
+                <div>
+                  N10,000 NGN
+                </div>
+                <p>
+                  <i class="fas fa-chevron-right"></i>
+                </p>
+              </div>
+              
+            </div>
+
+             <div>
+              <div class="admin-dashboard__transact--body-item">
+                <div>
+                  Jun 15 2018 - 8:09AM
+                </div>
+                <div>1716272537263</div>
+                <div>Bosun Bosun</div>
+                <div>Wunmi Wunmi</div>
+                <div>
+                  <div>Sucess</div>
+                </div>
+                <div>
+                  N10,000 NGN
+                </div>
+                <p>
+                  <i class="fas fa-chevron-right"></i>
+                </p>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
