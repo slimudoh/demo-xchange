@@ -147,6 +147,51 @@
   background: #c7c7c7;
   display: none;
 }
+.header > .dashboard__nav {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+.header > .dashboard__nav > div {
+  width: 100px;
+  text-align: center;
+  letter-spacing: 0;
+  color: #707070;
+  padding: 10px 0;
+  position: relative;
+}
+.header > .dashboard__nav > div > a {
+  color: #707070;
+  text-decoration: none;
+  font-size: 13px;
+}
+.header > .dashboard__nav > div:hover > .header__nav--inactive {
+  display: block;
+}
+.header > .dashboard__nav > div > .header__nav--active {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 60px;
+  background: #c7c7c7;
+  display: block;
+}
+.header > .dashboard__nav > div > .header__nav--inactive {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 60px;
+  background: #c7c7c7;
+  display: none;
+}
 .signup {
   padding: 0 50px 100px 50px;
 }
@@ -282,12 +327,19 @@
 }
 .signup > div > div > .signup__container--dropdown > div > div > .personal__input--full > .btn {
   width: 100px;
-  height: 40px;
   margin: auto;
   background: #ffffff;
   border: 1px solid #777777;
   border-radius: 5px;
   text-align: center;
+  overflow: hidden;
+}
+.signup > div > div > .signup__container--dropdown > div > div > .personal__input--full > .btn > a {
+  color: #707070;
+}
+.signup > div > div > .signup__container--dropdown > div > div > .personal__input--full > .btn > a > div {
+  width: 100%;
+  height: 40px;
   font-size: 10px;
   padding-top: 14px;
 }
@@ -323,7 +375,6 @@
   align-items: center;
   justify-content: space-between;
   align-content: center;
-  cursor: pointer;
 }
 .signup > div > div > .signup__container--dropdown > div > div > .document__identity > div > .document__container--text {
   width: calc(100% - 20px);
@@ -611,10 +662,17 @@
   border: 1px solid #777777;
   border-radius: 5px;
   margin: 40px auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+.signup > div > div > .signup__container--save > a {
+  text-decoration: none;
+  color: #707070;
+}
+.signup > div > div > .signup__container--save > a > div {
   font-size: 10px;
   text-align: center;
   padding-top: 14px;
-  cursor: pointer;
 }
 .user-dashboard {
   padding: 0 50px 100px 50px;
@@ -792,13 +850,21 @@
 }
 .user-dashboard > div > .user-dashboard__list > .user-dashboard__list-container > .user-dashboard__list-container-btn > div {
   width: 100px;
-  padding: 12px 0;
-  text-align: center;
   background: #c7c7c7;
   border-radius: 5px;
+  overflow: hidden;
+}
+.user-dashboard > div > .user-dashboard__list > .user-dashboard__list-container > .user-dashboard__list-container-btn > div > a {
+  color: #fff;
+  text-decoration: none;
+}
+.user-dashboard > div > .user-dashboard__list > .user-dashboard__list-container > .user-dashboard__list-container-btn > div > a > div {
+  width: 100%;
   font-size: 10px;
   letter-spacing: 0;
   color: #ffffff;
+  padding: 12px 0;
+  text-align: center;
 }
 .user-dashboard > div > .user-dashboard__floor {
   width: 65%;
@@ -985,6 +1051,10 @@
   background: #ffffff;
   border: 1px solid #707070;
   border-radius: 5px;
+  overflow: hidden;
+}
+.user-dashboard > div > .user-dashboard__chat > .user-dashboard__chat--header > div > a div {
+  width: 100%;
   letter-spacing: 0;
   color: #707070;
   text-align: center;
@@ -1128,6 +1198,332 @@
   color: #fff;
   padding-top: 6px;
 }
+.user-dashboard > div > .history-container {
+  width: 65%;
+}
+.user-dashboard > div > .history-container > .history-container__header {
+  background: #C7C7C7;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 0 10px;
+}
+.user-dashboard > div > .history-container > .history-container__header > div {
+  width: 20%;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+}
+.user-dashboard > div > .history-container > .history-container__body {
+  background-color: #FAFAFA;
+}
+.user-dashboard > div > .history-container > .history-container__body > div {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 0 10px;
+  background: #fff;
+  margin: 20px 0;
+}
+.user-dashboard > div > .history-container > .history-container__body > div > div {
+  width: 20%;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+}
+.user-dashboard > div > .history-container > .history-container__body > div > div > span {
+  font-size: 10px;
+  text-decoration: underline;
+}
+.user-dashboard > div > .history-container > .history-container__body > div > div > div {
+  width: 70px;
+  padding: 10px 0;
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+  text-align: center;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 8px;
+}
+.user-dashboard > div > .profile-container {
+  width: 65%;
+  background: #FFFFFF;
+  padding: 20px;
+}
+.user-dashboard > div > .profile-container > .profile-container__rate {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: center;
+}
+.user-dashboard > div > .profile-container > .profile-container__rate > .profile-container__rate--name {
+  width: 70px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  font-weight: 600;
+}
+.user-dashboard > div > .profile-container > .profile-container__rate > .profile-container__rate--stars {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  color: #A8A8A8;
+}
+.user-dashboard > div > .profile-container > .profile-container__head {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #707070;
+}
+.user-dashboard > div > .profile-container > .profile-container__head > div {
+  width: 100px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+}
+.user-dashboard > div > .profile-container > .profile-container__head > select {
+  width: 70px;
+  text-align: right;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  border: 0;
+  outline: 0;
+}
+.user-dashboard > div > .profile-container > .profile-container--history {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-ruler {
+  width: 10px;
+  height: 200px;
+  position: relative;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-ruler > .profile-container--history-ruler-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 60px;
+  background: #FFFFFF;
+  border: 1px solid #707070;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 9;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-ruler > .profile-container--history-ruler-line {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  width: 2px;
+  height: 200px;
+  border: 1px dashed #707070;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-text {
+  padding: 10px;
+  margin: 10px;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-text > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-text > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  background: #FBF8F8;
+  padding: 20px;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-text > div > .profile-container--history-text-profile {
+  width: 50px;
+  text-align: center;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-text > div > .profile-container--history-text-profile > img {
+  width: 30px;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-text > div > .profile-container--history-text-text {
+  width: calc(100% - 50px);
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-text > div > .profile-container--history-text-text > span {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 10px;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-text > div > .profile-container--history-text-text > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #A8A8A8;
+  font-size: 10px;
+  margin-top: 5px;
+}
+.user-dashboard > div > .account-container {
+  width: 65%;
+  background-color: #fff;
+  padding: 20px;
+}
+.user-dashboard > div > .account-container > p {
+  text-align: right;
+  letter-spacing: 0.54px;
+  color: #777777;
+  font-size: 12px;
+}
+.user-dashboard > div > .account-container > div > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  padding: 20px 0;
+  margin: 10px 0;
+}
+.user-dashboard > div > .account-container > div > div > div {
+  width: 33.3333333%;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  font-weight: 600;
+}
+.user-dashboard > div > .account-container > div > div > div > span {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  font-weight: normal;
+}
+.user-dashboard > div > .account-container > div > div > div > p {
+  margin-top: 10px;
+  text-align: center;
+}
+.user-dashboard > div > .account-container > div > div > div > p > span {
+  font-size: 9px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+.user-dashboard > div > .account-container > div > div > div > div {
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0;
+  color: #707070;
+  width: 100px;
+  margin: auto;
+}
+.user-dashboard > div > .historybox {
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+}
+.user-dashboard > div > .historybox > p {
+  letter-spacing: 0.42px;
+  color: #777777;
+  font-size: 10px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.user-dashboard > div > .historybox > .historybox__avatar {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  margin: auto;
+}
+.user-dashboard > div > .historybox > .historybox__avatar > .historybox__avatar--image {
+  width: 40px;
+  height: 40px;
+}
+.user-dashboard > div > .historybox > .historybox__avatar > .historybox__avatar--name {
+  width: 100px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 10px;
+  letter-spacing: 0;
+  color: #707070;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.user-dashboard > div > .historybox > .historybox__avatar > .historybox__avatar--name > input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.user-dashboard > div > .historybox > .historybox__details {
+  margin: 20px 0;
+}
+.user-dashboard > div > .historybox > .historybox__details > span {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  font-weight: 600;
+}
+.user-dashboard > div > .historybox > .historybox__details > p {
+  margin-top: 10px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 10px;
+  line-height: 1.9;
+}
+.user-dashboard > div > .historybox > .historybox__media > div {
+  margin-bottom: 10px;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  text-align: left;
+}
+.user-dashboard > div > .historybox > .historybox__media > div > p {
+  width: 20px;
+  float: left;
+}
 .user-dashboard > div > .user-dashboard__deal {
   width: 65%;
   background-color: #fff;
@@ -1181,7 +1577,7 @@
 .user-dashboard > div > .user-dashboard__deal > .user-dashboard__deal--form > div > .user-dashboard__deal--form-empty {
   width: 20%;
   float: left;
-  padding-top: 17px;
+  padding-top: 15px;
 }
 .user-dashboard > div > .user-dashboard__deal > .user-dashboard__deal--form > div > .user-dashboard__deal--form-empty > input {
   height: 30px;
@@ -1243,12 +1639,15 @@
   background: #c7c7c7;
   border-radius: 5px;
   width: 100px;
+  margin: auto;
+}
+.user-dashboard > div > .user-dashboard__deal > .user-dashboard__deal--btn > a > div {
+  width: 100%;
   height: 40px;
   font-size: 12px;
   color: #ffffff;
   text-align: center;
   padding-top: 12px;
-  margin: auto;
 }
 .user-dashboard > div > .messagebox {
   width: 30%;
@@ -1331,4 +1730,900 @@
   padding-top: 12px;
   padding-bottom: 10px;
   font-weight: 600;
+}
+.admin-dashboard {
+  padding: 0 50px 100px 50px;
+}
+.admin-dashboard > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.admin-dashboard > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+}
+.admin-dashboard > div > .admin-dashboard--half-transp {
+  width: 50%;
+  padding: 50px;
+}
+.admin-dashboard > div > .admin-dashboard--half-transp > h3 {
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.admin-dashboard > div > .admin-dashboard--half-transp > div {
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.admin-dashboard > div > .admin-dashboard--half-color {
+  width: 50%;
+  padding: 50px;
+}
+.admin-dashboard > div > .admin-dashboard--half-color > div {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px #D9D9D9FA;
+  border-radius: 5px;
+  padding: 20px;
+}
+.admin-dashboard > div > .admin-dashboard--half-color > div > .admin-dashboard--half-color--table > .admin-dashboard--half-color--table-head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 20px 10px;
+}
+.admin-dashboard > div > .admin-dashboard--half-color > div > .admin-dashboard--half-color--table > .admin-dashboard--half-color--table-head > div {
+  width: 50%;
+  text-align: left;
+  letter-spacing: 0;
+  color: #777777;
+  font-size: 10px;
+}
+.admin-dashboard > div > .admin-dashboard--half-color > div > .admin-dashboard--half-color--table > .admin-dashboard--half-color--table-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  background: #FAFAFA;
+  padding: 20px 10px;
+}
+.admin-dashboard > div > .admin-dashboard--half-color > div > .admin-dashboard--half-color--table > .admin-dashboard--half-color--table-body > div {
+  width: 50%;
+}
+.admin-dashboard > div > .admin-dashboard--half-color > div > .admin-dashboard--half-color--table > .admin-dashboard--half-color--table-body > div > span {
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 12px;
+}
+.admin-dashboard > div > .admin-dashboard--half-color > div > .admin-dashboard--half-color--table > .admin-dashboard--half-color--table-body > div > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 10px;
+  margin: 10px;
+}
+.admin-dashboard > div > .admin-dashboard--half-color > div > .admin-dashboard--half-color--add {
+  text-align: left;
+  letter-spacing: 0;
+  color: #777777;
+  font-size: 10px;
+  margin-top: 10px;
+}
+.admin-dashboard > div > .admin-dashboard__filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+.admin-dashboard > div > .admin-dashboard__filter > .admin-dashboard__traders--select {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+.admin-dashboard > div > .admin-dashboard__filter > .admin-dashboard__traders--select > div {
+  width: 45%;
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+}
+.admin-dashboard > div > .admin-dashboard__filter > .admin-dashboard__traders--select > div > select {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  outline: 0;
+  padding: 0 5px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+}
+.admin-dashboard > div > .admin-dashboard__filter > .admin-dashboard__traders--input {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+.admin-dashboard > div > .admin-dashboard__filter > .admin-dashboard__traders--input > .admin-dashboard__traders--input-print {
+  width: 70px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 10px;
+  padding-top: 12px;
+  text-align: center;
+}
+.admin-dashboard > div > .admin-dashboard__filter > .admin-dashboard__traders--input > .admin-dashboard__traders--input-export {
+  width: 70px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 10px;
+  padding-top: 12px;
+  text-align: center;
+}
+.admin-dashboard > div > .admin-dashboard__filter > .admin-dashboard__traders--input > .admin-dashboard__traders--input-search {
+  width: 200px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.admin-dashboard > div > .admin-dashboard__filter > .admin-dashboard__traders--input > .admin-dashboard__traders--input-search > input {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  outline: 0;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  padding: 0 5px 0 45px;
+}
+.admin-dashboard > div > .admin-dashboard__filter > .admin-dashboard__traders--input > .admin-dashboard__traders--input-search > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  background-color: #fff;
+  color: #C7C7C7;
+  text-align: center;
+  padding-top: 10px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__traders--head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background: #C7C7C7;
+  height: 50px;
+  padding: 0 20px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__traders--head > div {
+  width: 16.66666667%;
+  text-align: left;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__traders--body > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background: #C7C7C7;
+  height: 60px;
+  padding: 0 20px;
+  margin: 20px 0;
+  background: #FFFFFF;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__traders--body > div > div {
+  width: 16.66666667%;
+  text-align: left;
+  letter-spacing: 0;
+  font-size: 12px;
+  color: #707070;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__traders--body > div > div > div {
+  width: 100px;
+  background: #C7C7C7;
+  border-radius: 5px;
+  letter-spacing: 0;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__traders--body > div > div > div > a {
+  color: #FFFFFF;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__traders--body > div > div > div > a > div {
+  font-size: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 0;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background: #C7C7C7;
+  height: 60px;
+  padding: 0 20px;
+  margin-top: 20px;
+  background: #FFFFFF;
+  position: relative;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-item > div {
+  width: 16.66666667%;
+  text-align: left;
+  letter-spacing: 0;
+  font-size: 12px;
+  color: #707070;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-item > div > div {
+  width: 100px;
+  text-align: center;
+  padding: 10px 0;
+  background: #C7C7C7;
+  border-radius: 5px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  font-size: 10px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-item > p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  text-align: center;
+  padding-top: 20px;
+  color: #C7C7C7;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 20px;
+  border: 1px solid #C7C7C74D;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left {
+  width: 40%;
+  padding: 10px 20px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left > div {
+  margin: 20px 0;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left > div > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left > div > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left > div > div > div > span {
+  text-align: left;
+  letter-spacing: 0;
+  color: #B2B2B2;
+  text-transform: capitalize;
+  font-size: 10px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left > div > div > div > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  text-transform: capitalize;
+  font-size: 10px;
+  margin-top: 10px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle {
+  width: 20%;
+  padding: 20px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > div {
+  margin-top: 10px;
+  position: relative;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > div > .admin-dashboard__transact--body-dd-middle-line {
+  width: 2px;
+  height: 300px;
+  background: #C7C7C7;
+  border-radius: 3px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > div > .admin-dashboard__transact--body-dd-middle-items {
+  position: absolute;
+  top: 0;
+  left: -4px;
+  height: 300px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > div > .admin-dashboard__transact--body-dd-middle-items > div {
+  width: 100px;
+  margin: 10px 0 50px 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > div > .admin-dashboard__transact--body-dd-middle-items > div > .transact__point {
+  width: 10px;
+  height: 10px;
+  border-radius: 60px;
+  background: #707070;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > div > .admin-dashboard__transact--body-dd-middle-items > div > .transact__level {
+  width: calc(100% - 10px);
+  padding: 0 5px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > div > .admin-dashboard__transact--body-dd-middle-items > div > .transact__level > span {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 8px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > div > .admin-dashboard__transact--body-dd-middle-items > div > .transact__level > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #B1B1B1;
+  font-size: 6px;
+  margin-top: 3px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-right {
+  width: 40%;
+  padding: 20px;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-right > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-right > div {
+  background: #C7C7C7;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  padding-top: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  color: #FBF8F8;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.admin-page {
+  padding: 50px 50px 100px 50px;
+}
+.admin-page > .admin-page__currency {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: center;
+}
+.admin-page > .admin-page__currency > .admin-page__currency--amount {
+  width: 150px;
+}
+.admin-page > .admin-page__currency > .admin-page__currency--amount > span {
+  text-align: left;
+  letter-spacing: 0;
+  color: #B1B1B1;
+  font-size: 10px;
+}
+.admin-page > .admin-page__currency > .admin-page__currency--amount > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #777777;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.admin-page .admin-page__currency--country {
+  width: 200px;
+}
+.admin-page .admin-page__currency--country > span {
+  text-align: left;
+  letter-spacing: 0;
+  color: #B1B1B1;
+  font-size: 10px;
+}
+.admin-page .admin-page__currency--country > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10px;
+}
+.admin-page .admin-page__currency--country > div > div {
+  width: 50px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  font-weight: 600;
+}
+.admin-page > .admin-page__floor--rate {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-content: center;
+  margin: 50px 0;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary {
+  width: 40%;
+  background: #FFFFFF;
+  padding: 20px;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-rate > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-rate > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-rate > div > .admin-page__floor--rate-summary-rate-left {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-rate > div > .admin-page__floor--rate-summary-rate-left > .naira {
+  width: 50px;
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-rate > div > .admin-page__floor--rate-summary-rate-left > .naira > select {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  padding: 0 5px;
+  font-size: 8px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-rate > div > .admin-page__floor--rate-summary-rate-left > .refresh {
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 4px;
+  color: #A8A8A8;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-rate > div > .admin-page__floor--rate-summary-rate-left > .dollar {
+  width: 50px;
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-rate > div > .admin-page__floor--rate-summary-rate-left > .dollar > select {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  padding: 0 5px;
+  font-size: 8px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-rate > div > .admin-page__floor--rate-summary-rate-right {
+  width: 100px;
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-rate > div > .admin-page__floor--rate-summary-rate-right > select {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  padding: 0 5px;
+  font-size: 10px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-chart {
+  width: 100%;
+  border: 1px solid #C7C7C7;
+  margin: 20px 0;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-chart > canvas {
+  width: 100%;
+  height: 100%;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 10px;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > p > span {
+  color: #B1B1B1;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval {
+  width: 50%;
+  background: #FFFFFF;
+  padding: 30px;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 30px;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-text > .admin-page__floor--rate-approval-text-left {
+  width: 160px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-text > .admin-page__floor--rate-approval-text-right {
+  width: 70px;
+  text-align: right;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  align-content: center;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-alert {
+  width: 20px;
+  height: 20px;
+  border-radius: 60px;
+  text-align: center;
+  border: 1px solid #707070;
+  color: #707070;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-name {
+  width: 100px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 12px;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-has {
+  width: 100px;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-has > p {
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 0;
+  color: #707070;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-has > div {
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+  position: relative;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-has > div > input {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  padding: 0 5px 0 23px;
+  font-size: 8px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-has > div > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 30px;
+  border-right: 1px solid #C7C7C7;
+  font-size: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-arrow {
+  width: 20px;
+  height: 20px;
+  color: #707070;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-needs {
+  width: 100px;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-needs > p {
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 0;
+  color: #707070;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-needs > div {
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+  position: relative;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-needs > div > input {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  padding: 0 5px 0 23px;
+  font-size: 8px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-needs > div > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 30px;
+  border-right: 1px solid #C7C7C7;
+  font-size: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-btn {
+  width: 70px;
+  height: 30px;
+  background: #C7C7C7;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px 0;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+.admin-page > .admin-page__floor {
+  background: #FFFFFF;
+  padding: 20px 0;
+}
+.admin-page > .admin-page__floor > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 20px;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 20px;
+  margin: 20px 0;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--filter > .admin-page__floor--filter-select {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--filter > .admin-page__floor--filter-select > .admin-page__floor--filter-select-text {
+  width: 150px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #777777;
+  font-size: 12px;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--filter > .admin-page__floor--filter-select > .admin-page__floor--filter-select-all {
+  width: 100px;
+  background: #FFFFFF;
+  border: 1px solid #707070;
+  border-radius: 5px;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--filter > .admin-page__floor--filter-select > .admin-page__floor--filter-select-all > select {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  text-align: left;
+  letter-spacing: 0;
+  color: #777777;
+  font-size: 12px;
+  padding: 0 5px;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--filter > .admin-page__floor--filter-select > .admin-page__floor--filter-select-today {
+  width: 100px;
+  background: #FFFFFF;
+  border: 1px solid #707070;
+  border-radius: 5px;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--filter > .admin-page__floor--filter-select > .admin-page__floor--filter-select-today > select {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  text-align: left;
+  letter-spacing: 0;
+  color: #777777;
+  font-size: 12px;
+  padding: 0 5px;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--filter > .admin-page__floor--filter-text {
+  width: 200px;
+  text-align: right;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background: #C7C7C7;
+  height: 50px;
+  padding: 0 20px;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-head > div {
+  width: 16.66666667%;
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-body > div {
+  position: relative;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-body > div > .admin-page__floor--table-body-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background: #fff;
+  height: 60px;
+  padding: 0 50px;
+  border-bottom: 1px solid #707070;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-body > div > .admin-page__floor--table-body-item > div {
+  width: 16.66666667%;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 10px;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-body > div > .admin-page__floor--table-body-item > div > p {
+  font-size: 10px;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-body > div > .admin-page__floor--table-body-item > div > div > img {
+  width: 20px;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-body > div > .admin-page__floor--table-body-item > div > a {
+  text-decoration: underline;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-body > div > .admin-page__floor--table-body-item > div > span {
+  color: #F3826C;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-body > div > .admin-page__floor--table-body-arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 20px;
 }

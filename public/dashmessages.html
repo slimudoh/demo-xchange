@@ -19,17 +19,25 @@
   <body>
     <header class="header">
       <div class="header__logo"><a href="/">TROPERIAL</a></div>
-      <div class="header__nav">
+      <div class="dashboard__nav">
         <div>
-          <a href="messages.html">Messages</a>
+          <a href="dashboard.html">Dashboard</a>
           <div class="header__nav--inactive "></div>
         </div>
         <div>
-          <a href="history.html"> Your History</a>
+          <a href="traders.html">Traders</a>
           <div class="header__nav--inactive "></div>
         </div>
         <div>
-          <a href="account.html">Your Account</a>
+          <a href="transactions.html">Transactions</a>
+          <div class="header__nav--inactive "></div>
+        </div>
+        <div>
+          <a href="dashmessages.html"> Messages</a>
+          <div class="header__nav--active "></div>
+        </div>
+        <div>
+          <a href="dashaccount.html">Your Account</a>
           <div class="header__nav--inactive "></div>
         </div>
       </div>
@@ -41,79 +49,21 @@
         </a>
       </p>
       <div>
-        <div class="user-dashboard__list">
-          <div class="user-dashboard__list-container">
-            <div class="user-dashboard__list-container-profile">
-              <div>
-                <img src="./assets/img/profile.svg" alt="profile" />
-              </div>
-              <span>
-                view profile
-              </span>
-              <p>
-                Negotiate with Bosun Wunmi
-              </p>
-            </div>
-            <div class="user-dashboard__list-container-message">
-              Bosun listed on the trading floor, you can get a deal with him if
-              you have the currency he needs. Please state your offer rate and
-              you two can start negotiations!!!
-            </div>
-            <div class="user-dashboard__list-container-form">
-              <div>
-                <p>Bosun Has:</p>
+        <div class="messagebox">
+          <p>
+            Messages
+          </p>
+          <div>
+            <div>
+              <div class="messagebox__avatar">
                 <div>
-                  <div class="user-dashboard__list-container-form-half">
-                    <input type="text" value="$100.00 USD" />
-                  </div>
-                  <div class="user-dashboard__list-container-form-half">
-                    <select>
-                      <option value="test">
-                        USD
-                      </option>
-                    </select>
-                  </div>
+                  <img src="./assets/img/profile.svg" alt="" />
                 </div>
               </div>
-              <p>
-                &#8595;
-              </p>
-              <div>
-                <div>
-                  <div class="user-dashboard__list-container-form-full">
-                    <input
-                      type="text"
-                      placeholder="Please enter your rate. This field accepts figures only"
-                    />
-                  </div>
-                </div>
-              </div>
-              <p>
-                &#8595;
-              </p>
-              <div>
-                <p>Your Offer (Calculated)</p>
-                <div>
-                  <div class="user-dashboard__list-container-form-half">
-                    <input type="text" value="NGN" />
-                  </div>
-                  <div class="user-dashboard__list-container-form-half">
-                    <select>
-                      <option value="test">
-                        NGN
-                      </option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="user-dashboard__list-container-btn">
-              <div>
-                <a href="#">
-                  <div>
-                    Save & Submit
-                  </div>
-                </a>
+              <div class="messagebox__details">
+                <h4>John Doe</h4>
+                <p>Will you send it over?</p>
+                <span>2:54 am</span>
               </div>
             </div>
           </div>
@@ -124,7 +74,7 @@
           <div class="user-dashboard__chat--header">
             <p>Deal ID: TR/01/1000</p>
             <div>
-              <a href="deal.html">
+              <a href="#">
                 <div>
                   CLOSE DEAL
                 </div>

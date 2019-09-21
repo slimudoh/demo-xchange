@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon.ico" />
+    <meta name="application-name" content="Application Name" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="author" content="Q" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link href="./assets//fontawesome/css/all.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo"><a href="/">TROPERIAL</a></div>
+      <div class="dashboard__nav">
+        <div>
+          <a href="dashboard.html">Dashboard</a>
+          <div class="header__nav--active "></div>
+        </div>
+        <div>
+          <a href="traders.html">Traders</a>
+          <div class="header__nav--inactive "></div>
+        </div>
+        <div>
+          <a href="transactions.html">Transactions</a>
+          <div class="header__nav--inactive "></div>
+        </div>
+        <div>
+          <a href="dashmessages.html"> Messages</a>
+          <div class="header__nav--inactive "></div>
+        </div>
+        <div>
+          <a href="dashaccount.html">Your Account</a>
+          <div class="header__nav--inactive "></div>
+        </div>
+      </div>
+    </header>
+    <section class="admin-page">
+      <div class="admin-page__currency">
+        <div class="admin-page__currency--amount">
+          <span>Total Transactions Worth:</span>
+          <p>$20,000,000</p>
+        </div>
+
+        <div class="admin-page__currency--country">
+          <span>Traded Currencies::</span>
+          <div>
+            <div>NGN</div>
+            <div>USD</div>
+            <div>EUR</div>
+            <div>PND</div>
+            <div>GHC</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="admin-page__floor--rate">
+        <div class="admin-page__floor--rate-summary">
+          <div class="admin-page__floor--rate-summary-rate">
+            <p>Rates Summary:</p>
+            <div>
+              <div class="admin-page__floor--rate-summary-rate-left">
+                <div class="naira">
+                  <select>
+                    <option>NGN</option>
+                  </select>
+                </div>
+                <div class="refresh">
+                  <i class="fas fa-sync"></i>
+                </div>
+                <div class="dollar">
+                  <select>
+                    <option>USD</option>
+                  </select>
+                </div>
+              </div>
+              <div class="admin-page__floor--rate-summary-rate-right">
+                <select>
+                  <option>This week</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="admin-page__floor--rate-summary-chart">
+            <canvas id="myChart" width="400" height="400"></canvas>
+          </div>
+          <p><span>Average Trading Rate:</span> N300</p>
+        </div>
+        <div class="admin-page__floor--rate-approval">
+          <div class="admin-page__floor--rate-approval-text">
+            <div class="admin-page__floor--rate-approval-text-left">
+              Trades Awaiting Approvals:
+            </div>
+            <div class="admin-page__floor--rate-approval-text-right">
+              List a Trade
+            </div>
+          </div>
+          <div class="admin-page__floor--rate-approval-form">
+            <div class="admin-page__floor--rate-approval-form-alert">
+              &#x01C3;
+            </div>
+            <div class="admin-page__floor--rate-approval-form-name">
+              Bosun Bosun
+            </div>
+            <div class="admin-page__floor--rate-approval-form-has">
+              <p>Has</p>
+              <div>
+                <input type="text" />
+                <div>NGN</div>
+              </div>
+            </div>
+            <div class="admin-page__floor--rate-approval-form-arrow">
+              &#x2192;
+            </div>
+            <div class="admin-page__floor--rate-approval-form-needs">
+              <p>Needs</p>
+              <div>
+                <input type="text" />
+                <div>USD</div>
+              </div>
+            </div>
+            <div class="admin-page__floor--rate-approval-form-btn">
+              Take Action
+            </div>
+          </div>
+          <div class="admin-page__floor--rate-approval-form">
+            <div class="admin-page__floor--rate-approval-form-alert">
+              &#x01C3;
+            </div>
+            <div class="admin-page__floor--rate-approval-form-name">
+              Bosun Bosun
+            </div>
+            <div class="admin-page__floor--rate-approval-form-has">
+              <p>Has</p>
+              <div>
+                <input type="text" />
+                <div>NGN</div>
+              </div>
+            </div>
+            <div class="admin-page__floor--rate-approval-form-arrow">
+              &#x2192;
+            </div>
+            <div class="admin-page__floor--rate-approval-form-needs">
+              <p>Needs</p>
+              <div>
+                <input type="text" />
+                <div>USD</div>
+              </div>
+            </div>
+            <div class="admin-page__floor--rate-approval-form-btn">
+              Take Action
+            </div>
+          </div>
+          <div class="admin-page__floor--rate-approval-form">
+            <div class="admin-page__floor--rate-approval-form-alert">
+              &#x01C3;
+            </div>
+            <div class="admin-page__floor--rate-approval-form-name">
+              Bosun Bosun
+            </div>
+            <div class="admin-page__floor--rate-approval-form-has">
+              <p>Has</p>
+              <div>
+                <input type="text" />
+                <div>NGN</div>
+              </div>
+            </div>
+            <div class="admin-page__floor--rate-approval-form-arrow">
+              &#x2192;
+            </div>
+            <div class="admin-page__floor--rate-approval-form-needs">
+              <p>Needs</p>
+              <div>
+                <input type="text" />
+                <div>USD</div>
+              </div>
+            </div>
+            <div class="admin-page__floor--rate-approval-form-btn">
+              Take Action
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="admin-page__floor">
+        <p>
+          Trading Floor
+        </p>
+        <div class="admin-page__floor--filter">
+          <div class="admin-page__floor--filter-select ">
+            <div class="admin-page__floor--filter-select-text ">
+              Filter Deals by List Period:
+            </div>
+            <div class="admin-page__floor--filter-select-all ">
+              <select>
+                <option value="all">All</option>
+              </select>
+            </div>
+            <div class="admin-page__floor--filter-select-today ">
+              <select>
+                <option value="today">Today</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="admin-page__floor--filter-text">
+            Showing 1-10 of 100 deals
+          </div>
+        </div>
+
+        <div class="admin-page__floor--table">
+          <div class="admin-page__floor--table-head">
+            <div>Name</div>
+            <div>Date</div>
+            <div>Currency at hand</div>
+            <div>Currency needed</div>
+            <div>Status</div>
+            <div>Action</div>
+          </div>
+          <div class="admin-page__floor--table-body">
+            <div>
+              <div class="admin-page__floor--table-body-item">
+                <div>Bosun Wunmi</div>
+                <div>06/09/2019 <br /><br />10:54 AM</div>
+                <div>
+                  <p>Naira</p>
+                  <div>
+                    <img src="./assets/img/flags/nigeria.svg" alt="" /> N10,000
+                  </div>
+                </div>
+                <div>
+                  <p>US Dollars</p>
+                  <div>
+                    <img src="./assets/img/flags/us.svg" alt="" />
+                  </div>
+                </div>
+                <div><span>Pending</span></div>
+                <div>
+                  <a href="#">Contact Bosun</a>
+                  <br /><br />
+                  <a href="#">Delete Trade</a>
+                </div>
+              </div>
+
+              <div class="admin-page__floor--table-body-arrow">
+                &#10515;
+              </div>
+            </div>
+            <div>
+              <div class="admin-page__floor--table-body-item">
+                <div>Bosun Wunmi</div>
+                <div>06/09/2019 <br /><br />10:54 AM</div>
+                <div>
+                  <p>Naira</p>
+                  <div>
+                    <img src="./assets/img/flags/nigeria.svg" alt="" /> N10,000
+                  </div>
+                </div>
+                <div>
+                  <p>US Dollars</p>
+                  <div>
+                    <img src="./assets/img/flags/us.svg" alt="" />
+                  </div>
+                </div>
+                <div><span>Pending</span></div>
+                <div>
+                  <a href="#">Contact Bosun</a>
+                  <br /><br />
+                  <a href="#">Delete Trade</a>
+                </div>
+              </div>
+
+              <div class="admin-page__floor--table-body-arrow">
+                &#10515;
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var myChart = new Chart(ctx, {
+        type: "line",
+        responsive: true,
+        maintainAspectRatio: false,
+        data: {
+          labels: ["", "", "", "", "", ""],
+          datasets: [
+            {
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                "rgba(255, 255, 255, 0.1)",
+                "rgba(255, 255, 255, 0.1)",
+                "rgba(255, 255, 255, 0.1)",
+                "rgba(255, 255, 255, 0.1)",
+                "rgba(255, 255, 255, 0.1)",
+                "rgba(255, 255, 255, 0.1)"
+              ],
+              borderColor: [
+                "#C7C7C7",
+                "#C7C7C7",
+                "#C7C7C7",
+                "#C7C7C7",
+                "#C7C7C7",
+                "#C7C7C7"
+              ],
+              borderWidth: 1
+            }
+          ]
+        },
+        options: {
+          legend: {
+            display: false
+          },
+          tooltips: {
+            enabled: false
+          },
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  display: false,
+                  beginAtZero: true
+                }
+              }
+            ]
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
