@@ -2295,7 +2295,7 @@
   color: #707070;
 }
 .admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-rate > div > .admin-page__floor--rate-summary-rate-right {
-  width: 70px;
+  width: 100px;
   background: #FFFFFF;
   border: 1px solid #C7C7C7;
   border-radius: 5px;
@@ -2305,8 +2305,8 @@
   height: 30px;
   border: 0;
   outline: 0;
-  padding: 0 5px 0 23px;
-  font-size: 8px;
+  padding: 0 5px;
+  font-size: 10px;
   text-align: left;
   letter-spacing: 0;
   color: #707070;
@@ -2476,11 +2476,11 @@
   height: 30px;
   background: #C7C7C7;
   border-radius: 5px;
+  text-align: center;
   font-size: 10px;
   padding: 10px 0;
   letter-spacing: 0;
   color: #FFFFFF;
-  text-align: center;
 }
 .admin-page > .admin-page__floor {
   background: #FFFFFF;
