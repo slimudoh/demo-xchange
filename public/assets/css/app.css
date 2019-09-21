@@ -1200,7 +1200,6 @@
 }
 .user-dashboard > div > .history-container {
   width: 65%;
-  padding: 20px;
 }
 .user-dashboard > div > .history-container > .history-container__header {
   background: #C7C7C7;
@@ -1256,6 +1255,141 @@
   letter-spacing: 0;
   color: #707070;
   font-size: 8px;
+}
+.user-dashboard > div > .profile-container {
+  width: 65%;
+  background: #FFFFFF;
+  padding: 20px;
+}
+.user-dashboard > div > .profile-container > .profile-container__rate {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: center;
+}
+.user-dashboard > div > .profile-container > .profile-container__rate > .profile-container__rate--name {
+  width: 70px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  font-weight: 600;
+}
+.user-dashboard > div > .profile-container > .profile-container__rate > .profile-container__rate--stars {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.user-dashboard > div > .profile-container > .profile-container__head {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #707070;
+}
+.user-dashboard > div > .profile-container > .profile-container__head > div {
+  width: 100px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+}
+.user-dashboard > div > .profile-container > .profile-container__head > select {
+  width: 70px;
+  text-align: right;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  border: 0;
+  outline: 0;
+}
+.user-dashboard > div > .profile-container > .profile-container--history {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-ruler {
+  width: 10px;
+  height: 200px;
+  position: relative;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-ruler > .profile-container--history-ruler-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 60px;
+  background: #FFFFFF;
+  border: 1px solid #707070;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 9;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-ruler > .profile-container--history-ruler-line {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  width: 2px;
+  height: 200px;
+  border: 1px dashed #707070;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-text {
+  padding: 10px;
+  margin: 10px;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-text > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-text > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  background: #FBF8F8;
+  padding: 20px;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-text > div > .profile-container--history-text-profile {
+  width: 50px;
+  text-align: center;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-text > div > .profile-container--history-text-profile > img {
+  width: 30px;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-text > div > .profile-container--history-text-text {
+  width: calc(100% - 50px);
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-text > div > .profile-container--history-text-text > span {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 10px;
+}
+.user-dashboard > div > .profile-container > .profile-container--history > .profile-container--history-text > div > .profile-container--history-text-text > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #A8A8A8;
+  font-size: 10px;
+  margin-top: 5px;
 }
 .user-dashboard > div > .account-container {
   width: 65%;
@@ -1830,13 +1964,18 @@
 }
 .admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__traders--body > div > div > div {
   width: 100px;
-  text-align: center;
-  padding: 10px 0;
   background: #C7C7C7;
   border-radius: 5px;
   letter-spacing: 0;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__traders--body > div > div > div > a {
   color: #FFFFFF;
+}
+.admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__traders--body > div > div > div > a > div {
   font-size: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 0;
 }
 .admin-dashboard > div > .admin-dashboard__traders > .admin-dashboard__transact--body > div > .admin-dashboard__transact--body-item {
   display: flex;
