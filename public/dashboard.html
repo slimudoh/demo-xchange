@@ -12,6 +12,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <link rel="stylesheet" href="./assets/css/app.css" />
     <link href="./assets//fontawesome/css/all.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
@@ -61,108 +62,133 @@
         </div>
       </div>
 
-
       <div class="admin-page__floor--rate">
-          <div class="admin-page__floor--rate-summary">
-             <div class="admin-page__floor--rate-summary-rate">
-               <p>Rates Summary:</p>
-               <div>
-                <div class="admin-page__floor--rate-summary-rate-left">
-                  <div class="naira">
-                    <select>
-                      <option>NGN</option>
-                    </select>
-                  </div>
-                  <div class="refresh">
-                    <i class="fas fa-sync"></i>
-                  </div>
-                  <div class="dollar">
-                    <select>
-                      <option>USD</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="admin-page__floor--rate-summary-rate-right">
+        <div class="admin-page__floor--rate-summary">
+          <div class="admin-page__floor--rate-summary-rate">
+            <p>Rates Summary:</p>
+            <div>
+              <div class="admin-page__floor--rate-summary-rate-left">
+                <div class="naira">
                   <select>
-                    <option>This week</option>
+                    <option>NGN</option>
                   </select>
                 </div>
-               </div>
-             </div>
-              <div class="admin-page__floor--rate-summary-chart"></div>
-              <p><span>Average Trading Rate:</span> N300</p>
+                <div class="refresh">
+                  <i class="fas fa-sync"></i>
+                </div>
+                <div class="dollar">
+                  <select>
+                    <option>USD</option>
+                  </select>
+                </div>
+              </div>
+              <div class="admin-page__floor--rate-summary-rate-right">
+                <select>
+                  <option>This week</option>
+                </select>
+              </div>
+            </div>
           </div>
-          <div class="admin-page__floor--rate-approval">
-            <div class="admin-page__floor--rate-approval-text">
-                <div class="admin-page__floor--rate-approval-text-left">
-                    Trades Awaiting Approvals:
-                </div>
-                <div class="admin-page__floor--rate-approval-text-right">
-                    List a Trade
-                </div>
+          <div class="admin-page__floor--rate-summary-chart">
+            <canvas id="myChart" width="400" height="400"></canvas>
+          </div>
+          <p><span>Average Trading Rate:</span> N300</p>
+        </div>
+        <div class="admin-page__floor--rate-approval">
+          <div class="admin-page__floor--rate-approval-text">
+            <div class="admin-page__floor--rate-approval-text-left">
+              Trades Awaiting Approvals:
             </div>
-            <div class="admin-page__floor--rate-approval-form">
-                <div class="admin-page__floor--rate-approval-form-alert">&#x01C3;</div>
-                <div class="admin-page__floor--rate-approval-form-name">Bosun Bosun</div>
-                <div class="admin-page__floor--rate-approval-form-has">
-                  <p>Has</p>
-                  <div>
-                    <input type="text" />
-                    <div>NGN</div>
-                  </div>
-                </div>
-                <div class="admin-page__floor--rate-approval-form-arrow">&#x2192;</div>
-                <div class="admin-page__floor--rate-approval-form-needs">
-                    <p>Needs</p>
-                    <div>
-                        <input type="text" />
-                        <div>USD</div>
-                      </div>
-                </div>
-                <div class="admin-page__floor--rate-approval-form-btn">Take Action</div>
+            <div class="admin-page__floor--rate-approval-text-right">
+              List a Trade
             </div>
-            <div class="admin-page__floor--rate-approval-form">
-                <div class="admin-page__floor--rate-approval-form-alert">&#x01C3;</div>
-                <div class="admin-page__floor--rate-approval-form-name">Bosun Bosun</div>
-                <div class="admin-page__floor--rate-approval-form-has">
-                  <p>Has</p>
-                  <div>
-                    <input type="text" />
-                    <div>NGN</div>
-                  </div>
-                </div>
-                <div class="admin-page__floor--rate-approval-form-arrow">&#x2192;</div>
-                <div class="admin-page__floor--rate-approval-form-needs">
-                    <p>Needs</p>
-                    <div>
-                        <input type="text" />
-                        <div>USD</div>
-                      </div>
-                </div>
-                <div class="admin-page__floor--rate-approval-form-btn">Take Action</div>
+          </div>
+          <div class="admin-page__floor--rate-approval-form">
+            <div class="admin-page__floor--rate-approval-form-alert">
+              &#x01C3;
             </div>
-            <div class="admin-page__floor--rate-approval-form">
-                <div class="admin-page__floor--rate-approval-form-alert">&#x01C3;</div>
-                <div class="admin-page__floor--rate-approval-form-name">Bosun Bosun</div>
-                <div class="admin-page__floor--rate-approval-form-has">
-                  <p>Has</p>
-                  <div>
-                    <input type="text" />
-                    <div>NGN</div>
-                  </div>
-                </div>
-                <div class="admin-page__floor--rate-approval-form-arrow">&#x2192;</div>
-                <div class="admin-page__floor--rate-approval-form-needs">
-                    <p>Needs</p>
-                    <div>
-                        <input type="text" />
-                        <div>USD</div>
-                      </div>
-                </div>
-                <div class="admin-page__floor--rate-approval-form-btn">Take Action</div>
+            <div class="admin-page__floor--rate-approval-form-name">
+              Bosun Bosun
+            </div>
+            <div class="admin-page__floor--rate-approval-form-has">
+              <p>Has</p>
+              <div>
+                <input type="text" />
+                <div>NGN</div>
+              </div>
+            </div>
+            <div class="admin-page__floor--rate-approval-form-arrow">
+              &#x2192;
+            </div>
+            <div class="admin-page__floor--rate-approval-form-needs">
+              <p>Needs</p>
+              <div>
+                <input type="text" />
+                <div>USD</div>
+              </div>
+            </div>
+            <div class="admin-page__floor--rate-approval-form-btn">
+              Take Action
+            </div>
+          </div>
+          <div class="admin-page__floor--rate-approval-form">
+            <div class="admin-page__floor--rate-approval-form-alert">
+              &#x01C3;
+            </div>
+            <div class="admin-page__floor--rate-approval-form-name">
+              Bosun Bosun
+            </div>
+            <div class="admin-page__floor--rate-approval-form-has">
+              <p>Has</p>
+              <div>
+                <input type="text" />
+                <div>NGN</div>
+              </div>
+            </div>
+            <div class="admin-page__floor--rate-approval-form-arrow">
+              &#x2192;
+            </div>
+            <div class="admin-page__floor--rate-approval-form-needs">
+              <p>Needs</p>
+              <div>
+                <input type="text" />
+                <div>USD</div>
+              </div>
+            </div>
+            <div class="admin-page__floor--rate-approval-form-btn">
+              Take Action
+            </div>
+          </div>
+          <div class="admin-page__floor--rate-approval-form">
+            <div class="admin-page__floor--rate-approval-form-alert">
+              &#x01C3;
+            </div>
+            <div class="admin-page__floor--rate-approval-form-name">
+              Bosun Bosun
+            </div>
+            <div class="admin-page__floor--rate-approval-form-has">
+              <p>Has</p>
+              <div>
+                <input type="text" />
+                <div>NGN</div>
+              </div>
+            </div>
+            <div class="admin-page__floor--rate-approval-form-arrow">
+              &#x2192;
+            </div>
+            <div class="admin-page__floor--rate-approval-form-needs">
+              <p>Needs</p>
+              <div>
+                <input type="text" />
+                <div>USD</div>
+              </div>
+            </div>
+            <div class="admin-page__floor--rate-approval-form-btn">
+              Take Action
             </div>
           </div>
         </div>
+      </div>
 
       <div class="admin-page__floor">
         <p>
@@ -188,7 +214,7 @@
           <div class="admin-page__floor--filter-text">
             Showing 1-10 of 100 deals
           </div>
-        </div>      
+        </div>
 
         <div class="admin-page__floor--table">
           <div class="admin-page__floor--table-head">
@@ -260,5 +286,56 @@
         </div>
       </div>
     </section>
+    <script>
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var myChart = new Chart(ctx, {
+        type: "line",
+        responsive: true,
+        maintainAspectRatio: false,
+        data: {
+          labels: ["", "", "", "", "", ""],
+          datasets: [
+            {
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                "rgba(255, 255, 255, 0.1)",
+                "rgba(255, 255, 255, 0.1)",
+                "rgba(255, 255, 255, 0.1)",
+                "rgba(255, 255, 255, 0.1)",
+                "rgba(255, 255, 255, 0.1)",
+                "rgba(255, 255, 255, 0.1)"
+              ],
+              borderColor: [
+                "#C7C7C7",
+                "#C7C7C7",
+                "#C7C7C7",
+                "#C7C7C7",
+                "#C7C7C7",
+                "#C7C7C7"
+              ],
+              borderWidth: 1
+            }
+          ]
+        },
+        options: {
+          legend: {
+            display: false
+          },
+          tooltips: {
+            enabled: false
+          },
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  display: false,
+                  beginAtZero: true
+                }
+              }
+            ]
+          }
+        }
+      });
+    </script>
   </body>
 </html>
