@@ -1383,7 +1383,6 @@
 
     >.history-container {
       width: 65%;
-      padding: 20px;
 
       >.history-container__header {
         background: #C7C7C7;
@@ -1450,6 +1449,169 @@
 
 
     }
+    
+    >.profile-container {
+      width: 65%;
+      background: #FFFFFF;
+      padding: 20px;
+
+      > .profile-container__rate {
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: center;
+
+        > .profile-container__rate--name {
+          width: 70px;
+          text-align: left;
+          letter-spacing: 0;
+          color: #707070;
+          font-size: 12px;
+          font-weight: 600;
+        }
+  
+        > .profile-container__rate--stars {
+          width: 100px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: center;
+          align-content: center;
+        }
+
+      }
+
+      > .profile-container__head {
+        padding: 5px 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #707070;
+
+
+        > div {
+          width: 100px;
+          text-align: left;
+letter-spacing: 0;
+color: #707070;
+font-size: 12px;
+        }
+
+        > select {
+          width: 70px;
+          text-align: right;
+          letter-spacing: 0;
+          color: #707070;
+          font-size: 12px;
+          border: 0;
+          outline: 0;
+        }
+      } 
+
+      > .profile-container--history {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        align-content: center;
+
+        > .profile-container--history-ruler {
+          width: 10px;
+          height: 200px;
+          position: relative;
+
+          > .profile-container--history-ruler-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 60px;
+            background: #FFFFFF;
+            border: 1px solid #707070;
+            margin-bottom: 100px;
+            position: relative;
+            z-index: 9;
+          }
+
+          > .profile-container--history-ruler-line {
+                position: absolute;
+                top: 0;
+                left: 4px;
+                width: 2px;
+                height: 200px;
+                border: 1px dashed #707070;
+          }
+        }
+
+        > .profile-container--history-text {
+         
+          padding: 10px;
+          margin: 10px;
+
+          > p {
+            text-align: left;
+            letter-spacing: 0;
+            color: #707070;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+
+          > div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            justify-content: center;
+            align-content: center;
+            background: #FBF8F8;
+            padding: 20px;
+
+            > .profile-container--history-text-profile {
+              width: 50px;
+              text-align: center;
+
+              > img {
+                width: 30px;
+              }
+            }
+
+            
+            > .profile-container--history-text-text {
+              width:calc(100% - 50px);
+
+              > span {
+                text-align: left;
+                letter-spacing: 0;
+                color: #707070;
+                font-size: 10px;
+              }
+
+              > p {
+                text-align: left;
+                letter-spacing: 0;
+                color: #A8A8A8;
+                font-size: 10px;
+                margin-top: 5px;
+              }
+            }
+
+
+          }
+        
+        }
+
+      }
+     }
+
 
     >.account-container {
       width: 65%;
@@ -2144,15 +2306,21 @@
             color: #707070;
 
             >div {
-              width: 100px;
-              // margin: auto;
-              text-align: center;
-              padding: 10px 0;
+              width: 100px;             
               background: #C7C7C7;
               border-radius: 5px;
-              letter-spacing: 0;
-              color: #FFFFFF;
-              font-size: 10px;
+              letter-spacing: 0;                           
+
+              > a {
+                color: #FFFFFF;
+
+                > div {
+                  font-size: 10px;
+                  color: #FFFFFF;
+                  text-align: center;
+                  padding: 10px 0;
+                }
+              }
             }
 
           }
