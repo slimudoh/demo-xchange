@@ -1286,6 +1286,7 @@
   align-items: center;
   justify-content: center;
   align-content: center;
+  color: #A8A8A8;
 }
 .user-dashboard > div > .profile-container > .profile-container__head {
   padding: 5px 0;
@@ -2213,7 +2214,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   align-content: center;
   margin: 50px 0;
@@ -2274,6 +2275,7 @@
   font-size: 12px;
   text-align: center;
   padding-top: 4px;
+  color: #A8A8A8;
 }
 .admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-rate > div > .admin-page__floor--rate-summary-rate-left > .dollar {
   width: 50px;
@@ -2310,9 +2312,13 @@
   color: #707070;
 }
 .admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-chart {
-  height: 200px;
+  width: 100%;
   border: 1px solid #C7C7C7;
   margin: 20px 0;
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-chart > canvas {
+  width: 100%;
+  height: 100%;
 }
 .admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > p {
   text-align: left;
