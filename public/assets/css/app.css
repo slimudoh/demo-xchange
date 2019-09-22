@@ -794,6 +794,7 @@
   background: #ffffff;
   border: 1px solid #c7c7c7;
   border-radius: 5px;
+  overflow: hidden;
 }
 .user-dashboard > div > .user-dashboard__list > .user-dashboard__list-container > .user-dashboard__list-container-form > div > div > .user-dashboard__list-container-form-half > input {
   width: 100%;
@@ -822,6 +823,7 @@
   background: #ffffff;
   border: 1px solid #c7c7c7;
   border-radius: 5px;
+  overflow: hidden;
 }
 .user-dashboard > div > .user-dashboard__list > .user-dashboard__list-container > .user-dashboard__list-container-form > div > div > .user-dashboard__list-container-form-full > input {
   width: 100%;
@@ -908,6 +910,7 @@
   background: #ffffff;
   border: 1px solid #707070;
   border-radius: 5px;
+  overflow: hidden;
 }
 .user-dashboard > div > .user-dashboard__floor > .user-dashboard__floor--filter > .user-dashboard__floor--filter-input > .user-dashboard__floor--filter-input-list > select {
   width: 100%;
@@ -1142,8 +1145,8 @@
 .user-dashboard > div > .user-dashboard__chat > .user-dashboard__chat--btns > .user-dashboard__chat--btns-input {
   width: calc(100% - 40px);
   height: 40px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 .user-dashboard > div > .user-dashboard__chat > .user-dashboard__chat--btns > .user-dashboard__chat--btns-input > textarea {
   width: 100%;
@@ -1483,8 +1486,8 @@
   letter-spacing: 0;
   color: #707070;
   position: relative;
-  overflow: hidden;
   cursor: pointer;
+  overflow: hidden;
 }
 .user-dashboard > div > .historybox > .historybox__avatar > .historybox__avatar--name > input {
   position: absolute;
@@ -1555,6 +1558,7 @@
 .user-dashboard > div > .user-dashboard__deal > .user-dashboard__deal--form > div > .user-dashboard__deal--form-input {
   width: 20%;
   float: left;
+  overflow: hidden;
 }
 .user-dashboard > div > .user-dashboard__deal > .user-dashboard__deal--form > div > .user-dashboard__deal--form-input > p {
   text-align: left;
@@ -1578,6 +1582,7 @@
   width: 20%;
   float: left;
   padding-top: 15px;
+  overflow: hidden;
 }
 .user-dashboard > div > .user-dashboard__deal > .user-dashboard__deal--form > div > .user-dashboard__deal--form-empty > input {
   height: 30px;
@@ -1624,6 +1629,7 @@
   border: 1px solid #c7c7c7;
   border-radius: 5px;
   padding: 0 5px;
+  overflow: hidden;
 }
 .user-dashboard > div > .user-dashboard__deal > .user-dashboard__deal--select > .user-dashboard__deal--select-list > select {
   width: 100%;
@@ -1849,6 +1855,7 @@
   background: #FFFFFF;
   border: 1px solid #C7C7C7;
   border-radius: 5px;
+  overflow: hidden;
 }
 .admin-dashboard > div > .admin-dashboard__filter > .admin-dashboard__traders--select > div > select {
   width: 100%;
@@ -2254,6 +2261,7 @@
   background: #FFFFFF;
   border: 1px solid #C7C7C7;
   border-radius: 5px;
+  overflow: hidden;
 }
 .admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-rate > div > .admin-page__floor--rate-summary-rate-left > .naira > select {
   width: 100%;
