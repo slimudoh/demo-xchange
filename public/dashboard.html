@@ -21,23 +21,23 @@
     <header class="header">
       <div class="header__logo"><a href="/">TROPERIAL</a></div>
       <div class="dashboard__nav">
-        <div>
+        <div class="dashboard__nav-div">
           <a href="dashboard.html">Dashboard</a>
           <div class="header__nav--active "></div>
         </div>
-        <div>
+        <div class="dashboard__nav-div">
           <a href="traders.html">Traders</a>
           <div class="header__nav--inactive "></div>
         </div>
-        <div>
+        <div class="dashboard__nav-div">
           <a href="transactions.html">Transactions</a>
           <div class="header__nav--inactive "></div>
         </div>
-        <div>
+        <div class="dashboard__nav-div">
           <a href="dashmessages.html"> Messages</a>
           <div class="header__nav--inactive "></div>
         </div>
-        <div>
+        <div class="dashboard__nav-div">
           <a href="dashaccount.html">Your Account</a>
           <div class="header__nav--inactive "></div>
         </div>
@@ -52,12 +52,12 @@
 
         <div class="admin-page__currency--country">
           <span>Traded Currencies::</span>
-          <div>
-            <div>NGN</div>
-            <div>USD</div>
-            <div>EUR</div>
-            <div>PND</div>
-            <div>GHC</div>
+          <div class="admin-page__currency--country-div">
+            <div class="admin-page__currency--country-div-div">NGN</div>
+            <div class="admin-page__currency--country-div-div">USD</div>
+            <div class="admin-page__currency--country-div-div">EUR</div>
+            <div class="admin-page__currency--country-div-div">PND</div>
+            <div class="admin-page__currency--country-div-div">GHC</div>
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@
         <div class="admin-page__floor--rate-summary">
           <div class="admin-page__floor--rate-summary-rate">
             <p>Rates Summary:</p>
-            <div>
+            <div class="admin-page__floor--rate-summary-rate-div">
               <div class="admin-page__floor--rate-summary-rate-left">
                 <div class="naira">
                   <select>
@@ -112,9 +112,11 @@
             </div>
             <div class="admin-page__floor--rate-approval-form-has">
               <p>Has</p>
-              <div>
+              <div class="admin-page__floor--rate-approval-form-has-div">
                 <input type="text" />
-                <div>NGN</div>
+                <div class="admin-page__floor--rate-approval-form-has-div-div">
+                  NGN
+                </div>
               </div>
             </div>
             <div class="admin-page__floor--rate-approval-form-arrow">
@@ -122,9 +124,13 @@
             </div>
             <div class="admin-page__floor--rate-approval-form-needs">
               <p>Needs</p>
-              <div>
+              <div class="admin-page__floor--rate-approval-form-needs-div">
                 <input type="text" />
-                <div>USD</div>
+                <div
+                  class="admin-page__floor--rate-approval-form-needs-div-div"
+                >
+                  USD
+                </div>
               </div>
             </div>
             <div class="admin-page__floor--rate-approval-form-btn">
@@ -140,9 +146,11 @@
             </div>
             <div class="admin-page__floor--rate-approval-form-has">
               <p>Has</p>
-              <div>
+              <div class="admin-page__floor--rate-approval-form-has-div">
                 <input type="text" />
-                <div>NGN</div>
+                <div class="admin-page__floor--rate-approval-form-has-div-div">
+                  NGN
+                </div>
               </div>
             </div>
             <div class="admin-page__floor--rate-approval-form-arrow">
@@ -150,37 +158,13 @@
             </div>
             <div class="admin-page__floor--rate-approval-form-needs">
               <p>Needs</p>
-              <div>
+              <div class="admin-page__floor--rate-approval-form-needs-div">
                 <input type="text" />
-                <div>USD</div>
-              </div>
-            </div>
-            <div class="admin-page__floor--rate-approval-form-btn">
-              Take Action
-            </div>
-          </div>
-          <div class="admin-page__floor--rate-approval-form">
-            <div class="admin-page__floor--rate-approval-form-alert">
-              &#x01C3;
-            </div>
-            <div class="admin-page__floor--rate-approval-form-name">
-              Bosun Bosun
-            </div>
-            <div class="admin-page__floor--rate-approval-form-has">
-              <p>Has</p>
-              <div>
-                <input type="text" />
-                <div>NGN</div>
-              </div>
-            </div>
-            <div class="admin-page__floor--rate-approval-form-arrow">
-              &#x2192;
-            </div>
-            <div class="admin-page__floor--rate-approval-form-needs">
-              <p>Needs</p>
-              <div>
-                <input type="text" />
-                <div>USD</div>
+                <div
+                  class="admin-page__floor--rate-approval-form-needs-div-div"
+                >
+                  USD
+                </div>
               </div>
             </div>
             <div class="admin-page__floor--rate-approval-form-btn">
@@ -218,60 +202,40 @@
 
         <div class="admin-page__floor--table">
           <div class="admin-page__floor--table-head">
-            <div>Name</div>
-            <div>Date</div>
-            <div>Currency at hand</div>
-            <div>Currency needed</div>
-            <div>Status</div>
-            <div>Action</div>
+            <div class="admin-page__floor--table-head-div">Name</div>
+            <div class="admin-page__floor--table-head-div">Date</div>
+            <div class="admin-page__floor--table-head-div">
+              Currency at hand
+            </div>
+            <div class="admin-page__floor--table-head-div">Currency needed</div>
+            <div class="admin-page__floor--table-head-div">Status</div>
+            <div class="admin-page__floor--table-head-div">Action</div>
           </div>
           <div class="admin-page__floor--table-body">
-            <div>
+            <div class="admin-page__floor--table-head-div-div">
               <div class="admin-page__floor--table-body-item">
-                <div>Bosun Wunmi</div>
-                <div>06/09/2019 <br /><br />10:54 AM</div>
-                <div>
+                <div class="admin-page__floor--table-body-item-div">
+                  Bosun Wunmi
+                </div>
+                <div class="admin-page__floor--table-body-item-div">
+                  06/09/2019 <br /><br />10:54 AM
+                </div>
+                <div class="admin-page__floor--table-body-item-div">
                   <p>Naira</p>
-                  <div>
+                  <div class="admin-page__floor--table-body-item-div-div">
                     <img src="./assets/img/flags/nigeria.svg" alt="" /> N10,000
                   </div>
                 </div>
-                <div>
+                <div class="admin-page__floor--table-body-item-div">
                   <p>US Dollars</p>
-                  <div>
+                  <div class="admin-page__floor--table-body-item-div-div">
                     <img src="./assets/img/flags/us.svg" alt="" />
                   </div>
                 </div>
-                <div><span>Pending</span></div>
-                <div>
-                  <a href="#">Contact Bosun</a>
-                  <br /><br />
-                  <a href="#">Delete Trade</a>
+                <div class="admin-page__floor--table-body-item-div">
+                  <span>Pending</span>
                 </div>
-              </div>
-
-              <div class="admin-page__floor--table-body-arrow">
-                &#10515;
-              </div>
-            </div>
-            <div>
-              <div class="admin-page__floor--table-body-item">
-                <div>Bosun Wunmi</div>
-                <div>06/09/2019 <br /><br />10:54 AM</div>
-                <div>
-                  <p>Naira</p>
-                  <div>
-                    <img src="./assets/img/flags/nigeria.svg" alt="" /> N10,000
-                  </div>
-                </div>
-                <div>
-                  <p>US Dollars</p>
-                  <div>
-                    <img src="./assets/img/flags/us.svg" alt="" />
-                  </div>
-                </div>
-                <div><span>Pending</span></div>
-                <div>
+                <div class="admin-page__floor--table-body-item-div">
                   <a href="#">Contact Bosun</a>
                   <br /><br />
                   <a href="#">Delete Trade</a>

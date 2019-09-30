@@ -20,15 +20,15 @@
     <header class="header">
       <div class="header__logo"><a href="/">TROPERIAL</a></div>
       <div class="header__nav">
-        <div>
+        <div class="header__nav--item">
           <a href="messages.html">Messages</a>
           <div class="header__nav--active "></div>
         </div>
-        <div>
+        <div class="header__nav--item">
           <a href="history.html"> Your History</a>
           <div class="header__nav--inactive "></div>
         </div>
-        <div>
+        <div class="header__nav--item">
           <a href="account.html">Your Account</a>
           <div class="header__nav--inactive "></div>
         </div>
@@ -40,15 +40,15 @@
           &#8592; Go back to dashboard
         </a>
       </p>
-      <div>
+      <div class="user-dashboard--container">
         <div class="messagebox">
           <p>
             Messages
           </p>
-          <div>
-            <div>
+          <div class="messagebox-div">
+            <div class="messagebox-div-div">
               <div class="messagebox__avatar">
-                <div>
+                <div class="messagebox__avatar-div">
                   <img src="./assets/img/profile.svg" alt="" />
                 </div>
               </div>
@@ -65,9 +65,9 @@
           <p>Your chat with Bosun Wunmi</p>
           <div class="user-dashboard__chat--header">
             <p>Deal ID: TR/01/1000</p>
-            <div>
+            <div class="user-dashboard__chat--header-div">
               <a href="#">
-                <div>
+                <div class="user-dashboard__chat--header-div-div">
                   CLOSE DEAL
                 </div>
               </a>
@@ -75,18 +75,22 @@
           </div>
           <div class="user-dashboard__chat--messages">
             <div class="user-dashboard__chat--messages-sender">
-              <div>
+              <div class="user-dashboard__chat--messages-sender-div">
                 <div class="user-dashboard__chat--messages-sender-avatar">
-                  <div></div>
+                  <div
+                    class="user-dashboard__chat--messages-sender-div-div"
+                  ></div>
                 </div>
                 <div class="user-dashboard__chat--messages-sender-post"></div>
               </div>
             </div>
             <div class="user-dashboard__chat--messages-reciever">
-              <div>
+              <div class="user-dashboard__chat--messages-reciever-div">
                 <div class="user-dashboard__chat--messages-reciever-post"></div>
                 <div class="user-dashboard__chat--messages-reciever-avatar">
-                  <div></div>
+                  <div
+                    class="user-dashboard__chat--messages-reciever-avatar-div"
+                  ></div>
                 </div>
               </div>
             </div>
@@ -94,12 +98,14 @@
           <div class="user-dashboard__chat--btns">
             <div class="user-dashboard__chat--btns-input">
               <textarea placeholder="Type a message..."></textarea>
-              <div>
+              <div class="user-dashboard__chat--btns-input-div">
                 <img src="./assets/img/smile.svg" alt="" />
               </div>
             </div>
             <div class="user-dashboard__chat--btns-send">
-              <div><i class="fas fa-paper-plane"></i></div>
+              <div class="user-dashboard__chat--btns-send-div">
+                <i class="fas fa-paper-plane"></i>
+              </div>
             </div>
           </div>
         </div>
