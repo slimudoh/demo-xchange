@@ -1057,7 +1057,7 @@
   border-radius: 5px;
   overflow: hidden;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__chat > .user-dashboard__chat--header > .user-dashboard__chat--header-div > a div {
+.user-dashboard > .user-dashboard--container > .user-dashboard__chat > .user-dashboard__chat--header > .user-dashboard__chat--header-div > a > .user-dashboard__chat--header-div-div {
   width: 100%;
   letter-spacing: 0;
   color: #707070;
@@ -1142,6 +1142,7 @@
   align-items: center;
   justify-content: space-between;
   align-content: center;
+  overflow: hidden;
 }
 .user-dashboard > .user-dashboard--container > .user-dashboard__chat > .user-dashboard__chat--btns > .user-dashboard__chat--btns-input {
   width: calc(100% - 40px);
@@ -2408,6 +2409,7 @@
   border: 1px solid #C7C7C7;
   border-radius: 5px;
   position: relative;
+  overflow: hidden;
 }
 .admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-has > .admin-page__floor--rate-approval-form-has-div > input {
   width: 100%;

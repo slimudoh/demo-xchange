@@ -4,7 +4,7 @@
   padding-top: 20px;
   text-align: center;
 
-  > .homepage__pg {
+  >.homepage__pg {
     font-size: 12px;
     margin: 20px 0;
     text-align: center;
@@ -39,13 +39,13 @@
         width: 100%;
       }
 
-      > .homepage__container--div-box {
+      >.homepage__container--div-box {
         padding: 50px 0;
         background: #ffffff;
         box-shadow: 0px 2px 4px #0000001a;
         border-radius: 2px;
 
-        > .homepage__container--div-box-p {
+        >.homepage__container--div-box-p {
           text-align: center;
           font-size: 14px;
           letter-spacing: 0;
@@ -53,7 +53,7 @@
           margin-bottom: 20px;
         }
 
-        > .homepage__container--div-box-div {
+        >.homepage__container--div-box-div {
           width: 100px;
           margin: auto;
           border: 1px solid #5099de;
@@ -1216,7 +1216,7 @@
 
 
           >a {
-            div {
+            >.user-dashboard__chat--header-div-div {
               width: 100%;
               letter-spacing: 0;
               color: #707070;
@@ -1316,6 +1316,7 @@
         align-items: center;
         justify-content: space-between;
         align-content: center;
+        overflow: hidden;
 
         >.user-dashboard__chat--btns-input {
           width: calc(100% - 40px);
@@ -1452,13 +1453,13 @@
 
 
     }
-    
+
     >.profile-container {
       width: 65%;
       background: #FFFFFF;
       padding: 20px;
 
-      > .profile-container__rate {
+      >.profile-container__rate {
         width: 200px;
         display: flex;
         flex-direction: row;
@@ -1467,7 +1468,7 @@
         justify-content: flex-start;
         align-content: center;
 
-        > .profile-container__rate--name {
+        >.profile-container__rate--name {
           width: 70px;
           text-align: left;
           letter-spacing: 0;
@@ -1475,8 +1476,8 @@
           font-size: 12px;
           font-weight: 600;
         }
-  
-        > .profile-container__rate--stars {
+
+        >.profile-container__rate--stars {
           width: 100px;
           display: flex;
           flex-direction: row;
@@ -1489,7 +1490,7 @@
 
       }
 
-      > .profile-container__head {
+      >.profile-container__head {
         padding: 5px 0;
         display: flex;
         flex-direction: row;
@@ -1502,15 +1503,15 @@
         border-bottom: 1px solid #707070;
 
 
-        > .profile-container__head-div {
+        >.profile-container__head-div {
           width: 100px;
           text-align: left;
-letter-spacing: 0;
-color: #707070;
-font-size: 12px;
+          letter-spacing: 0;
+          color: #707070;
+          font-size: 12px;
         }
 
-        > select {
+        >select {
           width: 70px;
           text-align: right;
           letter-spacing: 0;
@@ -1519,9 +1520,9 @@ font-size: 12px;
           border: 0;
           outline: 0;
         }
-      } 
+      }
 
-      > .profile-container--history {
+      >.profile-container--history {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -1529,12 +1530,12 @@ font-size: 12px;
         justify-content: center;
         align-content: center;
 
-        > .profile-container--history-ruler {
+        >.profile-container--history-ruler {
           width: 10px;
           height: 200px;
           position: relative;
 
-          > .profile-container--history-ruler-dot {
+          >.profile-container--history-ruler-dot {
             width: 10px;
             height: 10px;
             border-radius: 60px;
@@ -1545,22 +1546,22 @@ font-size: 12px;
             z-index: 9;
           }
 
-          > .profile-container--history-ruler-line {
-                position: absolute;
-                top: 0;
-                left: 4px;
-                width: 2px;
-                height: 200px;
-                border: 1px dashed #707070;
+          >.profile-container--history-ruler-line {
+            position: absolute;
+            top: 0;
+            left: 4px;
+            width: 2px;
+            height: 200px;
+            border: 1px dashed #707070;
           }
         }
 
-        > .profile-container--history-text {
-         
+        >.profile-container--history-text {
+
           padding: 10px;
           margin: 10px;
 
-          > p {
+          >p {
             text-align: left;
             letter-spacing: 0;
             color: #707070;
@@ -1569,7 +1570,7 @@ font-size: 12px;
             margin-bottom: 10px;
           }
 
-          > .profile-container--history-text-div {
+          >.profile-container--history-text-div {
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
@@ -1579,27 +1580,27 @@ font-size: 12px;
             background: #FBF8F8;
             padding: 20px;
 
-            > .profile-container--history-text-profile {
+            >.profile-container--history-text-profile {
               width: 50px;
               text-align: center;
 
-              > img {
+              >img {
                 width: 30px;
               }
             }
 
-            
-            > .profile-container--history-text-text {
-              width:calc(100% - 50px);
 
-              > span {
+            >.profile-container--history-text-text {
+              width: calc(100% - 50px);
+
+              >span {
                 text-align: left;
                 letter-spacing: 0;
                 color: #707070;
                 font-size: 10px;
               }
 
-              > p {
+              >p {
                 text-align: left;
                 letter-spacing: 0;
                 color: #A8A8A8;
@@ -1610,11 +1611,11 @@ font-size: 12px;
 
 
           }
-        
+
         }
 
       }
-     }
+    }
 
 
     >.account-container {
@@ -1630,6 +1631,7 @@ font-size: 12px;
       }
 
       >.account-container-div {
+
         >.account-container-div-div {
           display: flex;
           flex-direction: row;
@@ -2314,15 +2316,15 @@ font-size: 12px;
             color: #707070;
 
             >.admin-dashboard__traders--body-div-div-div {
-              width: 100px;             
+              width: 100px;
               background: #C7C7C7;
               border-radius: 5px;
-              letter-spacing: 0;                           
+              letter-spacing: 0;
 
-              > a {
+              >a {
                 color: #FFFFFF;
 
-                > .admin-dashboard__traders--body-div-anchor {
+                >.admin-dashboard__traders--body-div-anchor {
                   font-size: 10px;
                   color: #FFFFFF;
                   text-align: center;
@@ -2633,11 +2635,11 @@ font-size: 12px;
 
     >.admin-page__floor--rate-summary {
       width: 40%;
-      background: #FFFFFF;     
+      background: #FFFFFF;
       padding: 20px;
 
-      > .admin-page__floor--rate-summary-rate {
-        > p {
+      >.admin-page__floor--rate-summary-rate {
+        >p {
           text-align: left;
           letter-spacing: 0;
           color: #000000;
@@ -2646,7 +2648,7 @@ font-size: 12px;
           margin-bottom: 10px;
         }
 
-        > .admin-page__floor--rate-summary-rate-div {
+        >.admin-page__floor--rate-summary-rate-div {
           display: flex;
           flex-direction: row;
           flex-wrap: nowrap;
@@ -2654,23 +2656,23 @@ font-size: 12px;
           justify-content: space-between;
           align-content: center;
 
-          > .admin-page__floor--rate-summary-rate-left {
+          >.admin-page__floor--rate-summary-rate-left {
             width: 150px;
             display: flex;
             flex-direction: row;
-          flex-wrap: nowrap;
-          align-items: center;
-          justify-content: space-between;
-          align-content: center;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            align-content: center;
 
-            > .naira {
+            >.naira {
               width: 50px;
               background: #FFFFFF;
               border: 1px solid #C7C7C7;
               border-radius: 5px;
               overflow: hidden;
 
-              > select {
+              >select {
                 width: 100%;
                 height: 30px;
                 border: 0;
@@ -2678,12 +2680,12 @@ font-size: 12px;
                 padding: 0 5px;
                 font-size: 8px;
                 text-align: left;
-                  letter-spacing: 0;
-                  color: #707070;
+                letter-spacing: 0;
+                color: #707070;
               }
             }
 
-            > .refresh {
+            >.refresh {
               width: 20px;
               height: 20px;
               background: #FFFFFF;
@@ -2695,13 +2697,13 @@ font-size: 12px;
               color: #A8A8A8;
             }
 
-            > .dollar {
+            >.dollar {
               width: 50px;
               background: #FFFFFF;
               border: 1px solid #C7C7C7;
               border-radius: 5px;
 
-              > select {
+              >select {
                 width: 100%;
                 height: 30px;
                 border: 0;
@@ -2709,21 +2711,21 @@ font-size: 12px;
                 padding: 0 5px;
                 font-size: 8px;
                 text-align: left;
-                  letter-spacing: 0;
-                  color: #707070;
+                letter-spacing: 0;
+                color: #707070;
               }
-              
+
             }
           }
 
-          > .admin-page__floor--rate-summary-rate-right {
+          >.admin-page__floor--rate-summary-rate-right {
             width: 100px;
             background: #FFFFFF;
             border: 1px solid #C7C7C7;
             border-radius: 5px;
             overflow: hidden;
 
-            > select {
+            >select {
               width: 100%;
               height: 30px;
               border: 0;
@@ -2731,8 +2733,8 @@ font-size: 12px;
               padding: 0 5px;
               font-size: 10px;
               text-align: left;
-            letter-spacing: 0;
-            color: #707070;
+              letter-spacing: 0;
+              color: #707070;
 
             }
           }
@@ -2741,26 +2743,26 @@ font-size: 12px;
       }
 
 
-      > .admin-page__floor--rate-summary-chart {
+      >.admin-page__floor--rate-summary-chart {
         width: 100%;
         border: 1px solid #C7C7C7;
         margin: 20px 0;
 
-        > canvas {
+        >canvas {
           width: 100%;
           height: 100%;
         }
       }
 
-      > p {
+      >p {
         text-align: left;
-          letter-spacing: 0;
-          color: #707070;
-          font-size: 10px;
+        letter-spacing: 0;
+        color: #707070;
+        font-size: 10px;
 
-          > span {
-            color: #B1B1B1;
-          }
+        >span {
+          color: #B1B1B1;
+        }
 
       }
     }
@@ -2769,54 +2771,54 @@ font-size: 12px;
       width: 50%;
       background: #FFFFFF;
       padding: 30px;
-      
+
 
       >.admin-page__floor--rate-approval-text {
         display: flex;
         flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center;
-      justify-content: space-between;
-      align-content: center;
-      margin-bottom: 30px;
-        
-      >.admin-page__floor--rate-approval-text-left {
-        width: 160px;
-        text-align: left;
-letter-spacing: 0;
-color: #000000;
-font-size: 12px;
-font-weight: 600;
-      }
-      
-      >.admin-page__floor--rate-approval-text-right {
-        width: 70px;
-        text-align: right;
-letter-spacing: 0;
-color: #000000;
-font-size: 12px;
-font-weight: 600;
-      }
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+        margin-bottom: 30px;
+
+        >.admin-page__floor--rate-approval-text-left {
+          width: 160px;
+          text-align: left;
+          letter-spacing: 0;
+          color: #000000;
+          font-size: 12px;
+          font-weight: 600;
+        }
+
+        >.admin-page__floor--rate-approval-text-right {
+          width: 70px;
+          text-align: right;
+          letter-spacing: 0;
+          color: #000000;
+          font-size: 12px;
+          font-weight: 600;
+        }
 
       }
 
       >.admin-page__floor--rate-approval-form {
         display: flex;
         flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: flex-end;
-      justify-content: space-between;
-      align-content: center;
-      overflow: hidden;
-      margin-bottom: 30px;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        align-content: center;
+        overflow: hidden;
+        margin-bottom: 30px;
 
         >.admin-page__floor--rate-approval-form-alert {
           width: 20px;
           height: 20px;
           border-radius: 60px;
           text-align: center;
-            border: 1px solid #707070;
-            color: #707070;
+          border: 1px solid #707070;
+          color: #707070;
         }
 
         >.admin-page__floor--rate-approval-form-name {
@@ -2824,28 +2826,29 @@ font-weight: 600;
           text-align: left;
           letter-spacing: 0;
           color: #000000;
-          font-size: 12px;          
+          font-size: 12px;
         }
 
         >.admin-page__floor--rate-approval-form-has {
           width: 100px;
-          
 
-          > p {
+
+          >p {
             text-align: left;
             font-size: 10px;
             letter-spacing: 0;
-color: #707070;
+            color: #707070;
 
           }
 
-          > .admin-page__floor--rate-approval-form-has-div {
+          >.admin-page__floor--rate-approval-form-has-div {
             background: #FFFFFF;
             border: 1px solid #C7C7C7;
             border-radius: 5px;
             position: relative;
+            overflow: hidden;
 
-            > input {
+            >input {
               width: 100%;
               height: 30px;
               border: 0;
@@ -2857,7 +2860,7 @@ color: #707070;
               color: #707070;
             }
 
-            > .admin-page__floor--rate-approval-form-has-div-div {
+            >.admin-page__floor--rate-approval-form-has-div-div {
               position: absolute;
               top: 0;
               left: 0;
@@ -2867,15 +2870,15 @@ color: #707070;
               font-size: 8px;
               display: flex;
               flex-direction: row;
-            flex-wrap: nowrap;
-            align-items: center;
-            justify-content: center;
-            align-content: center;
+              flex-wrap: nowrap;
+              align-items: center;
+              justify-content: center;
+              align-content: center;
             }
 
           }
 
-          
+
 
         }
 
@@ -2888,21 +2891,21 @@ color: #707070;
         >.admin-page__floor--rate-approval-form-needs {
           width: 100px;
 
-          > p {
+          >p {
             text-align: left;
             font-size: 10px;
             letter-spacing: 0;
-color: #707070;
+            color: #707070;
 
           }
 
-          > .admin-page__floor--rate-approval-form-needs-div {
+          >.admin-page__floor--rate-approval-form-needs-div {
             background: #FFFFFF;
             border: 1px solid #C7C7C7;
             border-radius: 5px;
             position: relative;
 
-            > input {
+            >input {
               width: 100%;
               height: 30px;
               border: 0;
@@ -2910,11 +2913,11 @@ color: #707070;
               padding: 0 5px 0 23px;
               font-size: 8px;
               text-align: left;
-letter-spacing: 0;
-color: #707070;
+              letter-spacing: 0;
+              color: #707070;
             }
 
-            > .admin-page__floor--rate-approval-form-needs-div-div {
+            >.admin-page__floor--rate-approval-form-needs-div-div {
               position: absolute;
               top: 0;
               left: 0;
@@ -2924,10 +2927,10 @@ color: #707070;
               font-size: 8px;
               display: flex;
               flex-direction: row;
-            flex-wrap: nowrap;
-            align-items: center;
-            justify-content: center;
-            align-content: center;
+              flex-wrap: nowrap;
+              align-items: center;
+              justify-content: center;
+              align-content: center;
             }
 
           }
@@ -2938,7 +2941,7 @@ color: #707070;
           height: 30px;
           background: #C7C7C7;
           border-radius: 5px;
-          text-align :center;
+          text-align: center;
           font-size: 10px;
           padding: 10px 0;
           letter-spacing: 0;
@@ -3066,9 +3069,10 @@ color: #707070;
       }
 
       >.admin-page__floor--table-body {
+        
+
         >.admin-page__floor--table-head-div-div {
           position: relative;
-
 
           >.admin-page__floor--table-body-item {
             display: flex;
@@ -3081,6 +3085,7 @@ color: #707070;
             height: 60px;
             padding: 0 50px;
             border-bottom: 1px solid #707070;
+            
 
 
             >.admin-page__floor--table-body-item-div {

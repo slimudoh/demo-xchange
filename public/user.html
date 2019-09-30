@@ -20,25 +20,25 @@
     <header class="header">
       <div class="header__logo"><a href="/">TROPERIAL</a></div>
       <div class="header__nav">
-        <div>
+        <div class="header__nav--item">
           <a href="messages.html">Messages</a>
           <div class="header__nav--inactive "></div>
         </div>
-        <div>
+        <div class="header__nav--item">
           <a href="history.html"> Your History</a>
-          <div class="header__nav--inactive "></div>
+          <div class="header__nav--active "></div>
         </div>
-        <div>
+        <div class="header__nav--item">
           <a href="account.html">Your Account</a>
-          <div class="header__nav--inactive"></div>
+          <div class="header__nav--inactive "></div>
         </div>
       </div>
     </header>
     <section class="user-dashboard">
-      <div>
+      <div class="user-dashboard--container">
         <div class="user-dashboard__list">
           <div class="user-dashboard__list-header">
-            <div>
+            <div class="user-dashboard__list-header-div">
               List on Trading Floor
             </div>
           </div>
@@ -49,9 +49,9 @@
               boxes will be active.
             </div>
             <div class="user-dashboard__list-container-form">
-              <div>
+              <div class="user-dashboard__list-container-form-div">
                 <p>Currency at hand</p>
-                <div>
+                <div class="user-dashboard__list-container-form-div-div">
                   <div class="user-dashboard__list-container-form-half">
                     <input type="text" value="$100.00 USD" />
                   </div>
@@ -67,9 +67,9 @@
               <p>
                 &#8595;
               </p>
-              <div>
+              <div class="user-dashboard__list-container-form-div">
                 <p>Currency needed</p>
-                <div>
+                <div class="user-dashboard__list-container-form-div-div">
                   <div class="user-dashboard__list-container-form-half">
                     <input type="text" value="NGN" />
                   </div>
@@ -84,9 +84,9 @@
               </div>
             </div>
             <div class="user-dashboard__list-container-btn">
-              <div>
+              <div class="user-dashboard__list-container-btn-div">
                 <a href="#">
-                  <div>
+                  <div class="user-dashboard__list-container-btn-div-div">
                     SUBMIT
                   </div>
                 </a>
@@ -113,31 +113,47 @@
           </div>
           <div class="user-dashboard__floor--table">
             <div class="user-dashboard__floor--table-head">
-              <div>Name</div>
-              <div>Date</div>
-              <div>Currency at hand</div>
-              <div>Currency Needed</div>
-              <div>Status</div>
-              <div>Action</div>
+              <div class="user-dashboard__floor--table-head-div">Name</div>
+              <div class="user-dashboard__floor--table-head-div">Date</div>
+              <div class="user-dashboard__floor--table-head-div">
+                Currency at hand
+              </div>
+              <div class="user-dashboard__floor--table-head-div">
+                Currency Needed
+              </div>
+              <div class="user-dashboard__floor--table-head-div">Status</div>
+              <div class="user-dashboard__floor--table-head-div">Action</div>
             </div>
             <div class="user-dashboard__floor--table-body">
-              <div>
-                <div>Bosun Wunmi</div>
-                <div>
+              <div class="user-dashboard__floor--table-body-div">
+                <div class="user-dashboard__floor--table-body-div-div">
+                  Bosun Wunmi
+                </div>
+                <div class="user-dashboard__floor--table-body-div-div">
                   <p>06/09/2019 <br />10:54 AM</p>
                 </div>
-                <div>
-                  <div>Naira</div>
-                  <div>
+                <div class="user-dashboard__floor--table-body-div-div">
+                  <div class="user-dashboard__floor--table-body-anchor">
+                    Naira
+                  </div>
+                  <div class="user-dashboard__floor--table-body-anchor">
                     <img src="./assets/img/flags/nigeria.svg" alt= /> N10,000
                   </div>
                 </div>
-                <div>
-                  <div>US Dollars</div>
-                  <div><img src="./assets/img/flags/us.svg" alt= /></div>
+                <div class="user-dashboard__floor--table-body-div-div">
+                  <div class="user-dashboard__floor--table-body-anchor">
+                    US Dollars
+                  </div>
+                  <div class="user-dashboard__floor--table-body-anchor">
+                    <img src="./assets/img/flags/us.svg" alt= />
+                  </div>
                 </div>
-                <div><span>Pending</span></div>
-                <div><a href="spinner.html">Contact Bosun</a></div>
+                <div class="user-dashboard__floor--table-body-div-div">
+                  <span>Pending</span>
+                </div>
+                <div class="user-dashboard__floor--table-body-div-div">
+                  <a href="spinner.html">Contact Bosun</a>
+                </div>
               </div>
             </div>
           </div>

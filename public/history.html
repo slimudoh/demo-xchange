@@ -20,17 +20,17 @@
     <header class="header">
       <div class="header__logo"><a href="/">TROPERIAL</a></div>
       <div class="header__nav">
-        <div>
+        <div class="header__nav--item">
           <a href="messages.html">Messages</a>
           <div class="header__nav--inactive "></div>
         </div>
-        <div>
+        <div class="header__nav--item">
           <a href="history.html"> Your History</a>
-          <div class="header__nav--inactive "></div>
-        </div>
-        <div>
-          <a href="account.html">Your Account</a>
           <div class="header__nav--active "></div>
+        </div>
+        <div class="header__nav--item">
+          <a href="account.html">Your Account</a>
+          <div class="header__nav--inactive "></div>
         </div>
       </div>
     </header>
@@ -49,7 +49,7 @@
         &nbsp;&nbsp;|&nbsp;&nbsp;
         <span><strong>Transaction History</strong> </span>
       </p>
-      <div>
+      <div class="user-dashboard--container">
         <div class="historybox">
           <p>Edit</p>
           <div class="historybox__avatar">
@@ -72,11 +72,11 @@
             </p>
           </div>
           <div class="historybox__media">
-            <div>
+            <div class="historybox__media-div">
               <p><i class="fab fa-facebook-square"></i></p>
               facebook.com/bosunwunmi
             </div>
-            <div>
+            <div class="historybox__media-div">
               <p><i class="fab fa-twitter-square"></i></p>
               twitter.com/bosunwunmi
             </div>
@@ -85,51 +85,37 @@
 
         <div class="history-container">
           <div class="history-container__header">
-            <div>S/N</div>
-            <div>Transaction ID</div>
-            <div>Amount</div>
-            <div>Deal Status</div>
-            <div></div>
+            <div class="history-container__header-div">S/N</div>
+            <div class="history-container__header-div">Transaction ID</div>
+            <div class="history-container__header-div">Amount</div>
+            <div class="history-container__header-div">Deal Status</div>
+            <div class="history-container__header-div"></div>
           </div>
           <div class="history-container__body">
-            <div>
-              <div>1</div>
-              <div>001</div>
-              <div>$15,000</div>
-              <div>
-                <div>
+            <div class="history-container__body-div">
+              <div class="history-container__body-div-div">1</div>
+              <div class="history-container__body-div-div">001</div>
+              <div class="history-container__body-div-div">$15,000</div>
+              <div class="history-container__body-div-div">
+                <div class="history-container__body-div-div-div">
                   PENDING
                 </div>
               </div>
-              <div>
+              <div class="history-container__body-div-div">
                 <span>Remove Deal</span>
               </div>
             </div>
 
-            <div>
-              <div>2</div>
-              <div>001</div>
-              <div>$15,000</div>
-              <div>
-                <div>
+            <div class="history-container__body-div">
+              <div class="history-container__body-div-div">2</div>
+              <div class="history-container__body-div-div">001</div>
+              <div class="history-container__body-div-div">$15,000</div>
+              <div class="history-container__body-div-div">
+                <div class="history-container__body-div-div-div">
                   PENDING
                 </div>
               </div>
-              <div>
-                <span>Remove Deal</span>
-              </div>
-            </div>
-
-            <div>
-              <div>3</div>
-              <div>001</div>
-              <div>$15,000</div>
-              <div>
-                <div>
-                  PENDING
-                </div>
-              </div>
-              <div>
+              <div class="history-container__body-div-div">
                 <span>Remove Deal</span>
               </div>
             </div>
