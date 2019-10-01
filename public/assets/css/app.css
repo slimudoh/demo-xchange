@@ -11,6 +11,7 @@
   line-height: 1.8;
   color: #444242;
   font-weight: 600;
+  padding: 0 10px;
 }
 .homepage > .homepage__container {
   max-width: 800px;
@@ -44,6 +45,8 @@
   background: #ffffff;
   box-shadow: 0px 2px 4px #0000001a;
   border-radius: 2px;
+  max-width: 250px;
+  margin: auto;
 }
 .homepage > .homepage__container > .homepage__container--div > .homepage__container--div-box > .homepage__container--div-box-p {
   text-align: center;
@@ -111,6 +114,11 @@
   justify-content: space-between;
   align-content: center;
 }
+@media (max-width: 600px) {
+  .header > .header__nav {
+    display: none;
+  }
+}
 .header > .header__nav > .header__nav--item {
   width: 100px;
   text-align: center;
@@ -147,6 +155,22 @@
   background: #c7c7c7;
   display: none;
 }
+.header > .header__hamburger {
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+@media (max-width: 600px) {
+  .header > .header__hamburger {
+    display: block;
+  }
+}
+.header > .header__hamburger > .header__hamburger--menu {
+  width: 90%;
+  height: 3px;
+  background-color: #707070;
+  margin: 5px auto 0 auto;
+}
 .header > .dashboard__nav {
   width: 500px;
   display: flex;
@@ -155,6 +179,11 @@
   align-items: center;
   justify-content: space-between;
   align-content: center;
+}
+@media (max-width: 600px) {
+  .header > .dashboard__nav {
+    display: none;
+  }
 }
 .header > .dashboard__nav > .dashboard__nav-div {
   width: 100px;
@@ -194,6 +223,11 @@
 }
 .signup {
   padding: 0 50px 100px 50px;
+}
+@media (max-width: 600px) {
+  .signup {
+    padding: 0 10px 100px 10px;
+  }
 }
 .signup > .signup__div {
   max-width: 600px;
@@ -250,6 +284,11 @@
   box-shadow: 0px 3px 6px #00000029;
   opacity: 1;
 }
+@media (max-width: 600px) {
+  .signup > .signup__div > .signup__div--box > .signup__container--dropdown {
+    padding: 20px 10px 20px 10px;
+  }
+}
 .signup > .signup__div > .signup__div--box > .signup__container--dropdown > h3 {
   letter-spacing: 0;
   color: #707070;
@@ -267,9 +306,19 @@
   align-content: center;
   padding: 0 5px;
 }
+@media (max-width: 400px) {
+  .signup > .signup__div > .signup__div--box > .signup__container--dropdown > .signup__container--dropdown-div > .signup__container--dropdown-div-div {
+    flex-wrap: wrap;
+  }
+}
 .signup > .signup__div > .signup__div--box > .signup__container--dropdown > .signup__container--dropdown-div > .signup__container--dropdown-div-div > .personal__input--half {
   width: 48%;
   margin-bottom: 20px;
+}
+@media (max-width: 400px) {
+  .signup > .signup__div > .signup__div--box > .signup__container--dropdown > .signup__container--dropdown-div > .signup__container--dropdown-div-div > .personal__input--half {
+    width: 100%;
+  }
 }
 .signup > .signup__div > .signup__div--box > .signup__container--dropdown > .signup__container--dropdown-div > .signup__container--dropdown-div-div > .personal__input--half > label {
   letter-spacing: 0;
@@ -678,6 +727,11 @@
 .user-dashboard {
   padding: 0 50px 100px 50px;
 }
+@media (max-width: 900px) {
+  .user-dashboard {
+    padding: 0 10px 100px 10px;
+  }
+}
 .user-dashboard > p {
   text-align: left;
   letter-spacing: 0;
@@ -691,12 +745,33 @@
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: space-between;
-  align-content: center;
+  align-content: flex-start;
   margin-top: 30px;
+  overflow: hidden;
+}
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
 .user-dashboard > .user-dashboard--container > .user-dashboard__list {
   width: 30%;
   background-color: #fff;
+  max-width: 300px;
+  min-width: 200px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+@media (max-width: 900px) {
+  .user-dashboard > .user-dashboard--container > .user-dashboard__list {
+    padding: 5px;
+  }
+}
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .user-dashboard__list {
+    width: 100%;
+  }
 }
 .user-dashboard > .user-dashboard--container > .user-dashboard__list > .user-dashboard__list-header {
   background: #f5f7fa;
@@ -712,6 +787,11 @@
   padding-top: 12px;
   padding-bottom: 10px;
   font-weight: 600;
+}
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .user-dashboard__list > .user-dashboard__list-header > .user-dashboard__list-header-div {
+    width: 100%;
+  }
 }
 .user-dashboard > .user-dashboard--container > .user-dashboard__list > .user-dashboard__list-container {
   background: #ffffff;
@@ -871,16 +951,31 @@
 }
 .user-dashboard > .user-dashboard--container > .user-dashboard__floor {
   width: 65%;
+  overflow: auto;
+}
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .user-dashboard__floor {
+    width: 100%;
+  }
+}
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box {
   background-color: #fff;
   padding: 20px;
+  min-width: 450px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > p {
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box {
+    width: 100%;
+    min-width: 600px;
+  }
+}
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > p {
   text-align: center;
   color: #707070;
   font-size: 14px;
   font-weight: 600;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--filter {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--filter {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -890,7 +985,7 @@
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--filter > .user-dashboard__floor--filter-input {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--filter > .user-dashboard__floor--filter-input {
   width: 250px;
   display: flex;
   flex-direction: row;
@@ -899,21 +994,21 @@
   justify-content: flex-start;
   align-content: center;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--filter > .user-dashboard__floor--filter-input > .user-dashboard__floor--filter-input-text {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--filter > .user-dashboard__floor--filter-input > .user-dashboard__floor--filter-input-text {
   text-align: left;
   letter-spacing: 0;
   color: #777777;
   font-size: 10px;
   width: 130px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--filter > .user-dashboard__floor--filter-input > .user-dashboard__floor--filter-input-list {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--filter > .user-dashboard__floor--filter-input > .user-dashboard__floor--filter-input-list {
   width: 100px;
   background: #ffffff;
   border: 1px solid #707070;
   border-radius: 5px;
   overflow: hidden;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--filter > .user-dashboard__floor--filter-input > .user-dashboard__floor--filter-input-list > select {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--filter > .user-dashboard__floor--filter-input > .user-dashboard__floor--filter-input-list > select {
   width: 100%;
   height: 30px;
   border: 0;
@@ -923,17 +1018,17 @@
   color: #777777;
   font-size: 10px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--filter > .user-dashboard__floor--filter-page {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--filter > .user-dashboard__floor--filter-page {
   width: 200px;
   text-align: right;
   font-size: 10px;
   letter-spacing: 0;
   color: #707070;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--table {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--table {
   margin-bottom: 20px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--table > .user-dashboard__floor--table-head {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--table > .user-dashboard__floor--table-head {
   background: #c7c7c7;
   display: flex;
   flex-direction: row;
@@ -943,16 +1038,16 @@
   align-content: center;
   padding: 0 10px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--table > .user-dashboard__floor--table-head > .user-dashboard__floor--table-head-div {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--table > .user-dashboard__floor--table-head > .user-dashboard__floor--table-head-div {
   width: 16.66666667%;
   padding: 12px 0;
   color: #fff;
   font-size: 10px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--table > .user-dashboard__floor--table-body {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--table > .user-dashboard__floor--table-body {
   background: #ffffff;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--table > .user-dashboard__floor--table-body > .user-dashboard__floor--table-body-div {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--table > .user-dashboard__floor--table-body > .user-dashboard__floor--table-body-div {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -963,28 +1058,31 @@
   height: 50px;
   border-bottom: 1px solid #c7c7c7;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--table > .user-dashboard__floor--table-body > .user-dashboard__floor--table-body-div > .user-dashboard__floor--table-body-div-div {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--table > .user-dashboard__floor--table-body > .user-dashboard__floor--table-body-div > .user-dashboard__floor--table-body-div-div {
   width: 16.66666667%;
   color: #707070;
   font-size: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--table > .user-dashboard__floor--table-body > .user-dashboard__floor--table-body-div > .user-dashboard__floor--table-body-div-div p {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--table > .user-dashboard__floor--table-body > .user-dashboard__floor--table-body-div > .user-dashboard__floor--table-body-div-div p {
   text-align: left;
   letter-spacing: 0;
   color: #707070;
   font-size: 10px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--table > .user-dashboard__floor--table-body > .user-dashboard__floor--table-body-div > .user-dashboard__floor--table-body-div-div > span {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--table > .user-dashboard__floor--table-body > .user-dashboard__floor--table-body-div > .user-dashboard__floor--table-body-div-div > span {
   text-align: left;
   letter-spacing: 0;
   color: #f3826c;
   font-size: 10px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--table > .user-dashboard__floor--table-body > .user-dashboard__floor--table-body-div > .user-dashboard__floor--table-body-div-div > a {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--table > .user-dashboard__floor--table-body > .user-dashboard__floor--table-body-div > .user-dashboard__floor--table-body-div-div > a {
   color: #707070;
   text-decoration: underline;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--table > .user-dashboard__floor--table-body > .user-dashboard__floor--table-body-div > .user-dashboard__floor--table-body-div-div > .user-dashboard__floor--table-body-anchor {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--table > .user-dashboard__floor--table-body > .user-dashboard__floor--table-body-div > .user-dashboard__floor--table-body-div-div > .user-dashboard__floor--table-body-anchor {
   height: 13px;
   text-align: left;
   letter-spacing: 0;
@@ -992,7 +1090,7 @@
   font-size: 10px;
   overflow: hidden;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--table > .user-dashboard__floor--table-body > .user-dashboard__floor--table-body-div > .user-dashboard__floor--table-body-div-div > .user-dashboard__floor--table-body-anchor > img {
+.user-dashboard > .user-dashboard--container > .user-dashboard__floor > .user-dashboard__floor--box > .user-dashboard__floor--table > .user-dashboard__floor--table-body > .user-dashboard__floor--table-body-div > .user-dashboard__floor--table-body-div-div > .user-dashboard__floor--table-body-anchor > img {
   width: 13px;
   vertical-align: 0;
 }
@@ -1000,6 +1098,17 @@
   width: 65%;
   background-color: #fff;
   padding: 50px 50px 100px 50px;
+  overflow: auto;
+}
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .user-dashboard__spinner {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .user-dashboard > .user-dashboard--container > .user-dashboard__spinner {
+    padding: 50px 10px 100px 10px;
+  }
 }
 @keyframes spin {
   from {
@@ -1027,6 +1136,14 @@
   width: 65%;
   background-color: #fff;
   padding: 20px;
+  min-width: 450px;
+  overflow: auto;
+}
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .user-dashboard__chat {
+    width: 100%;
+    min-width: 300px;
+  }
 }
 .user-dashboard > .user-dashboard--container > .user-dashboard__chat > p {
   text-align: center;
@@ -1082,6 +1199,11 @@
   justify-content: center;
   align-content: center;
 }
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .user-dashboard__chat > .user-dashboard__chat--messages > .user-dashboard__chat--messages-sender > .user-dashboard__chat--messages-sender-div {
+    width: 100%;
+  }
+}
 .user-dashboard > .user-dashboard--container > .user-dashboard__chat > .user-dashboard__chat--messages > .user-dashboard__chat--messages-sender > .user-dashboard__chat--messages-sender-div > .user-dashboard__chat--messages-sender-avatar {
   width: 40px;
 }
@@ -1113,6 +1235,11 @@
   align-items: flex-start;
   justify-content: center;
   align-content: center;
+}
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .user-dashboard__chat > .user-dashboard__chat--messages > .user-dashboard__chat--messages-reciever > .user-dashboard__chat--messages-reciever-div {
+    width: 100%;
+  }
 }
 .user-dashboard > .user-dashboard--container > .user-dashboard__chat > .user-dashboard__chat--messages > .user-dashboard__chat--messages-reciever > .user-dashboard__chat--messages-reciever-div > .user-dashboard__chat--messages-reciever-avatar {
   width: 40px;
@@ -1205,8 +1332,20 @@
 }
 .user-dashboard > .user-dashboard--container > .history-container {
   width: 65%;
+  overflow: auto;
 }
-.user-dashboard > .user-dashboard--container > .history-container > .history-container__header {
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .history-container {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .history-container > .history-container--box {
+    width: 100%;
+    min-width: 500px;
+  }
+}
+.user-dashboard > .user-dashboard--container > .history-container > .history-container--box > .history-container__header {
   background: #C7C7C7;
   height: 50px;
   display: flex;
@@ -1217,17 +1356,17 @@
   align-content: center;
   padding: 0 10px;
 }
-.user-dashboard > .user-dashboard--container > .history-container > .history-container__header > .history-container__header-div {
+.user-dashboard > .user-dashboard--container > .history-container > .history-container--box > .history-container__header > .history-container__header-div {
   width: 20%;
   text-align: left;
   letter-spacing: 0;
   color: #707070;
   font-size: 12px;
 }
-.user-dashboard > .user-dashboard--container > .history-container > .history-container__body {
+.user-dashboard > .user-dashboard--container > .history-container > .history-container--box > .history-container__body {
   background-color: #FAFAFA;
 }
-.user-dashboard > .user-dashboard--container > .history-container > .history-container__body > .history-container__body-div {
+.user-dashboard > .user-dashboard--container > .history-container > .history-container--box > .history-container__body > .history-container__body-div {
   height: 60px;
   display: flex;
   flex-direction: row;
@@ -1239,18 +1378,21 @@
   background: #fff;
   margin: 20px 0;
 }
-.user-dashboard > .user-dashboard--container > .history-container > .history-container__body > .history-container__body-div > .history-container__body-div-div {
+.user-dashboard > .user-dashboard--container > .history-container > .history-container--box > .history-container__body > .history-container__body-div > .history-container__body-div-div {
   width: 20%;
   text-align: left;
   letter-spacing: 0;
   color: #707070;
   font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.user-dashboard > .user-dashboard--container > .history-container > .history-container__body > .history-container__body-div > .history-container__body-div-div > span {
+.user-dashboard > .user-dashboard--container > .history-container > .history-container--box > .history-container__body > .history-container__body-div > .history-container__body-div-div > span {
   font-size: 10px;
   text-decoration: underline;
 }
-.user-dashboard > .user-dashboard--container > .history-container > .history-container__body > .history-container__body-div > .history-container__body-div-div > .history-container__body-div-div-div {
+.user-dashboard > .user-dashboard--container > .history-container > .history-container--box > .history-container__body > .history-container__body-div > .history-container__body-div-div > .history-container__body-div-div-div {
   width: 70px;
   padding: 10px 0;
   background: #FFFFFF;
@@ -1263,10 +1405,23 @@
 }
 .user-dashboard > .user-dashboard--container > .profile-container {
   width: 65%;
+  overflow: auto;
+}
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .profile-container {
+    width: 100%;
+  }
+}
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box {
   background: #FFFFFF;
   padding: 20px;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container__rate {
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box {
+    min-width: 500px;
+  }
+}
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container__rate {
   width: 200px;
   display: flex;
   flex-direction: row;
@@ -1275,7 +1430,7 @@
   justify-content: flex-start;
   align-content: center;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container__rate > .profile-container__rate--name {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container__rate > .profile-container__rate--name {
   width: 70px;
   text-align: left;
   letter-spacing: 0;
@@ -1283,7 +1438,7 @@
   font-size: 12px;
   font-weight: 600;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container__rate > .profile-container__rate--stars {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container__rate > .profile-container__rate--stars {
   width: 100px;
   display: flex;
   flex-direction: row;
@@ -1293,7 +1448,7 @@
   align-content: center;
   color: #A8A8A8;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container__head {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container__head {
   padding: 5px 0;
   display: flex;
   flex-direction: row;
@@ -1305,14 +1460,14 @@
   margin-bottom: 10px;
   border-bottom: 1px solid #707070;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container__head > .profile-container__head-div {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container__head > .profile-container__head-div {
   width: 100px;
   text-align: left;
   letter-spacing: 0;
   color: #707070;
   font-size: 12px;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container__head > select {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container__head > select {
   width: 70px;
   text-align: right;
   letter-spacing: 0;
@@ -1321,7 +1476,7 @@
   border: 0;
   outline: 0;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--history {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container--history {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1329,12 +1484,12 @@
   justify-content: center;
   align-content: center;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--history > .profile-container--history-ruler {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container--history > .profile-container--history-ruler {
   width: 10px;
   height: 200px;
   position: relative;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--history > .profile-container--history-ruler > .profile-container--history-ruler-dot {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container--history > .profile-container--history-ruler > .profile-container--history-ruler-dot {
   width: 10px;
   height: 10px;
   border-radius: 60px;
@@ -1344,7 +1499,7 @@
   position: relative;
   z-index: 9;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--history > .profile-container--history-ruler > .profile-container--history-ruler-line {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container--history > .profile-container--history-ruler > .profile-container--history-ruler-line {
   position: absolute;
   top: 0;
   left: 4px;
@@ -1352,11 +1507,11 @@
   height: 200px;
   border: 1px dashed #707070;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--history > .profile-container--history-text {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container--history > .profile-container--history-text {
   padding: 10px;
   margin: 10px;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--history > .profile-container--history-text > p {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container--history > .profile-container--history-text > p {
   text-align: left;
   letter-spacing: 0;
   color: #707070;
@@ -1364,7 +1519,7 @@
   font-weight: 600;
   margin-bottom: 10px;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--history > .profile-container--history-text > .profile-container--history-text-div {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container--history > .profile-container--history-text > .profile-container--history-text-div {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1374,23 +1529,23 @@
   background: #FBF8F8;
   padding: 20px;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--history > .profile-container--history-text > .profile-container--history-text-div > .profile-container--history-text-profile {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container--history > .profile-container--history-text > .profile-container--history-text-div > .profile-container--history-text-profile {
   width: 50px;
   text-align: center;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--history > .profile-container--history-text > .profile-container--history-text-div > .profile-container--history-text-profile > img {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container--history > .profile-container--history-text > .profile-container--history-text-div > .profile-container--history-text-profile > img {
   width: 30px;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--history > .profile-container--history-text > .profile-container--history-text-div > .profile-container--history-text-text {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container--history > .profile-container--history-text > .profile-container--history-text-div > .profile-container--history-text-text {
   width: calc(100% - 50px);
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--history > .profile-container--history-text > .profile-container--history-text-div > .profile-container--history-text-text > span {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container--history > .profile-container--history-text > .profile-container--history-text-div > .profile-container--history-text-text > span {
   text-align: left;
   letter-spacing: 0;
   color: #707070;
   font-size: 10px;
 }
-.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--history > .profile-container--history-text > .profile-container--history-text-div > .profile-container--history-text-text > p {
+.user-dashboard > .user-dashboard--container > .profile-container > .profile-container--box > .profile-container--history > .profile-container--history-text > .profile-container--history-text-div > .profile-container--history-text-text > p {
   text-align: left;
   letter-spacing: 0;
   color: #A8A8A8;
@@ -1399,16 +1554,30 @@
 }
 .user-dashboard > .user-dashboard--container > .account-container {
   width: 65%;
+  overflow: auto;
+}
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .account-container {
+    width: 100%;
+  }
+}
+.user-dashboard > .user-dashboard--container > .account-container > .account-container--box {
+  min-width: 500px;
   background-color: #fff;
   padding: 20px;
 }
-.user-dashboard > .user-dashboard--container > .account-container > p {
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .account-container > .account-container--box {
+    width: 100%;
+  }
+}
+.user-dashboard > .user-dashboard--container > .account-container > .account-container--box > p {
   text-align: right;
   letter-spacing: 0.54px;
   color: #777777;
   font-size: 12px;
 }
-.user-dashboard > .user-dashboard--container > .account-container > .account-container-div > .account-container-div-div {
+.user-dashboard > .user-dashboard--container > .account-container > .account-container--box > .account-container-div > .account-container-div-div {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1418,7 +1587,7 @@
   padding: 20px 0;
   margin: 10px 0;
 }
-.user-dashboard > .user-dashboard--container > .account-container > .account-container-div > .account-container-div-div > .account-container-div-div-div {
+.user-dashboard > .user-dashboard--container > .account-container > .account-container--box > .account-container-div > .account-container-div-div > .account-container-div-div-div {
   width: 33.3333333%;
   text-align: left;
   letter-spacing: 0;
@@ -1426,23 +1595,23 @@
   font-size: 12px;
   font-weight: 600;
 }
-.user-dashboard > .user-dashboard--container > .account-container > .account-container-div > .account-container-div-div > .account-container-div-div-div > span {
+.user-dashboard > .user-dashboard--container > .account-container > .account-container--box > .account-container-div > .account-container-div-div > .account-container-div-div-div > span {
   text-align: left;
   letter-spacing: 0;
   color: #707070;
   font-size: 12px;
   font-weight: normal;
 }
-.user-dashboard > .user-dashboard--container > .account-container > .account-container-div > .account-container-div-div > .account-container-div-div-div > p {
+.user-dashboard > .user-dashboard--container > .account-container > .account-container--box > .account-container-div > .account-container-div-div > .account-container-div-div-div > p {
   margin-top: 10px;
   text-align: center;
 }
-.user-dashboard > .user-dashboard--container > .account-container > .account-container-div > .account-container-div-div > .account-container-div-div-div > p > span {
+.user-dashboard > .user-dashboard--container > .account-container > .account-container--box > .account-container-div > .account-container-div-div > .account-container-div-div-div > p > span {
   font-size: 9px;
   font-weight: normal;
   text-decoration: underline;
 }
-.user-dashboard > .user-dashboard--container > .account-container > .account-container-div > .account-container-div-div > .account-container-div-div-div > .account-container-div-div-div-div {
+.user-dashboard > .user-dashboard--container > .account-container > .account-container--box > .account-container-div > .account-container-div-div > .account-container-div-div-div > .account-container-div-div-div-div {
   background: #FFFFFF;
   border: 1px solid #C7C7C7;
   border-radius: 5px;
@@ -1456,8 +1625,16 @@
 }
 .user-dashboard > .user-dashboard--container > .historybox {
   width: 30%;
+  max-width: 300px;
+  min-width: 200px;
   background-color: #fff;
   padding: 20px;
+  margin-bottom: 30px;
+}
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .historybox {
+    width: 100%;
+  }
 }
 .user-dashboard > .user-dashboard--container > .historybox > p {
   letter-spacing: 0.42px;
@@ -1531,45 +1708,59 @@
 }
 .user-dashboard > .user-dashboard--container > .user-dashboard__deal {
   width: 65%;
+  overflow: auto;
+}
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .user-dashboard__deal {
+    width: 100%;
+  }
+}
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box {
   background-color: #fff;
   padding: 20px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > p {
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box {
+    width: 100%;
+    min-width: 500px;
+  }
+}
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > p {
   text-align: right;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--smile {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--smile {
   width: 80px;
   height: 80px;
   margin: 0 auto 30px auto;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--form {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--form {
   max-width: 500px;
   margin: 0 auto 30px auto;
   overflow: hidden;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--form > p {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--form > p {
   text-align: center;
   letter-spacing: 0;
   color: #707070;
   font-size: 12px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--form > .user-dashboard__deal--form-div {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--form > .user-dashboard__deal--form-div {
   margin-top: 20px;
   overflow: hidden;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--form > .user-dashboard__deal--form-div > .user-dashboard__deal--form-input {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--form > .user-dashboard__deal--form-div > .user-dashboard__deal--form-input {
   width: 20%;
   float: left;
   overflow: hidden;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--form > .user-dashboard__deal--form-div > .user-dashboard__deal--form-input > p {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--form > .user-dashboard__deal--form-div > .user-dashboard__deal--form-input > p {
   text-align: left;
   letter-spacing: 0;
   color: #707070;
   font-size: 10px;
   margin-bottom: 5px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--form > .user-dashboard__deal--form-div > .user-dashboard__deal--form-input > input {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--form > .user-dashboard__deal--form-div > .user-dashboard__deal--form-input > input {
   height: 30px;
   background: #ffffff;
   border: 1px solid #c7c7c7;
@@ -1580,13 +1771,13 @@
   color: #707070;
   font-size: 10px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--form > .user-dashboard__deal--form-div > .user-dashboard__deal--form-empty {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--form > .user-dashboard__deal--form-div > .user-dashboard__deal--form-empty {
   width: 20%;
   float: left;
   padding-top: 15px;
   overflow: hidden;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--form > .user-dashboard__deal--form-div > .user-dashboard__deal--form-empty > input {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--form > .user-dashboard__deal--form-div > .user-dashboard__deal--form-empty > input {
   height: 30px;
   background: #ffffff;
   border: 1px solid #c7c7c7;
@@ -1596,14 +1787,14 @@
   color: #707070;
   font-size: 10px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--form > .user-dashboard__deal--form-div > .user-dashboard__deal--form-arrow {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--form > .user-dashboard__deal--form-div > .user-dashboard__deal--form-arrow {
   width: 20%;
   float: left;
   text-align: center;
   font-size: 20px;
   padding-top: 20px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--select {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--select {
   max-width: 500px;
   display: flex;
   flex-direction: row;
@@ -1613,18 +1804,18 @@
   align-content: center;
   margin: 0 auto 30px auto;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--select > .user-dashboard__deal--select-check {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--select > .user-dashboard__deal--select-check {
   width: 50px;
   text-align: center;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--select > .user-dashboard__deal--select-text {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--select > .user-dashboard__deal--select-text {
   width: 200px;
   text-align: left;
   letter-spacing: 0;
   color: #707070;
   font-size: 12px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--select > .user-dashboard__deal--select-list {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--select > .user-dashboard__deal--select-list {
   width: 50px;
   height: 30px;
   background: #ffffff;
@@ -1633,7 +1824,7 @@
   padding: 0 5px;
   overflow: hidden;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--select > .user-dashboard__deal--select-list > select {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--select > .user-dashboard__deal--select-list > select {
   width: 100%;
   height: 30px;
   border: 0;
@@ -1643,13 +1834,13 @@
   color: #707070;
   font-size: 12px;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--btn {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--btn {
   background: #c7c7c7;
   border-radius: 5px;
   width: 100px;
   margin: auto;
 }
-.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--btn > a > .user-dashboard__deal--btn-div {
+.user-dashboard > .user-dashboard--container > .user-dashboard__deal > .user-dashboard__deal--box > .user-dashboard__deal--btn > a > .user-dashboard__deal--btn-div {
   width: 100%;
   height: 40px;
   font-size: 12px;
@@ -1661,6 +1852,14 @@
   width: 30%;
   background-color: #fff;
   padding: 20px;
+  max-width: 300px;
+  min-width: 200px;
+  margin-bottom: 30px;
+}
+@media (max-width: 800px) {
+  .user-dashboard > .user-dashboard--container > .messagebox {
+    width: 100%;
+  }
 }
 .user-dashboard > .user-dashboard--container > .messagebox > p {
   text-align: left;
@@ -1741,6 +1940,12 @@
 }
 .admin-dashboard {
   padding: 0 50px 100px 50px;
+  overflow: hidden;
+}
+@media (max-width: 800px) {
+  .admin-dashboard {
+    padding: 0 10px 100px 10px;
+  }
 }
 .admin-dashboard > p {
   text-align: left;
@@ -1757,10 +1962,17 @@
   justify-content: center;
   align-content: center;
   margin-top: 30px;
+  overflow: hidden;
 }
 .admin-dashboard > .admin-dashboard-div > .admin-dashboard--half-transp {
   width: 50%;
   padding: 50px;
+}
+@media (max-width: 600px) {
+  .admin-dashboard > .admin-dashboard-div > .admin-dashboard--half-transp {
+    width: 100%;
+    padding: 10px;
+  }
 }
 .admin-dashboard > .admin-dashboard-div > .admin-dashboard--half-transp > h3 {
   text-align: left;
@@ -1779,6 +1991,12 @@
 .admin-dashboard > .admin-dashboard-div > .admin-dashboard--half-color {
   width: 50%;
   padding: 50px;
+}
+@media (max-width: 600px) {
+  .admin-dashboard > .admin-dashboard-div > .admin-dashboard--half-color {
+    width: 100%;
+    padding: 10px;
+  }
 }
 .admin-dashboard > .admin-dashboard-div > .admin-dashboard--half-color > .admin-dashboard--half-color-div {
   background: #FFFFFF;
@@ -1836,14 +2054,18 @@
   margin-top: 10px;
 }
 .admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter {
+  overflow: auto;
+}
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__filter--box {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   align-content: center;
+  min-width: 800px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__traders--select {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__filter--box > .admin-dashboard__traders--select {
   width: 250px;
   display: flex;
   flex-direction: row;
@@ -1852,14 +2074,14 @@
   justify-content: space-between;
   align-content: center;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__traders--select > .admin-dashboard__traders--select-div {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__filter--box > .admin-dashboard__traders--select > .admin-dashboard__traders--select-div {
   width: 45%;
   background: #FFFFFF;
   border: 1px solid #C7C7C7;
   border-radius: 5px;
   overflow: hidden;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__traders--select > .admin-dashboard__traders--select-div > select {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__filter--box > .admin-dashboard__traders--select > .admin-dashboard__traders--select-div > select {
   width: 100%;
   height: 40px;
   border: 0;
@@ -1870,7 +2092,7 @@
   color: #707070;
   font-size: 12px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__traders--input {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__filter--box > .admin-dashboard__traders--input {
   width: 400px;
   display: flex;
   flex-direction: row;
@@ -1879,7 +2101,7 @@
   justify-content: space-between;
   align-content: center;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__traders--input > .admin-dashboard__traders--input-print {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__filter--box > .admin-dashboard__traders--input > .admin-dashboard__traders--input-print {
   width: 70px;
   height: 40px;
   background: #FFFFFF;
@@ -1891,7 +2113,7 @@
   padding-top: 12px;
   text-align: center;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__traders--input > .admin-dashboard__traders--input-export {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__filter--box > .admin-dashboard__traders--input > .admin-dashboard__traders--input-export {
   width: 70px;
   height: 40px;
   background: #FFFFFF;
@@ -1903,7 +2125,7 @@
   padding-top: 12px;
   text-align: center;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__traders--input > .admin-dashboard__traders--input-search {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__filter--box > .admin-dashboard__traders--input > .admin-dashboard__traders--input-search {
   width: 200px;
   height: 40px;
   background: #FFFFFF;
@@ -1912,7 +2134,7 @@
   position: relative;
   overflow: hidden;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__traders--input > .admin-dashboard__traders--input-search > input {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__filter--box > .admin-dashboard__traders--input > .admin-dashboard__traders--input-search > input {
   width: 100%;
   height: 40px;
   border: 0;
@@ -1923,7 +2145,7 @@
   font-size: 12px;
   padding: 0 5px 0 45px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__traders--input > .admin-dashboard__traders--input-search > .admin-dashboard__traders--input-search-div {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__filter > .admin-dashboard__filter--box > .admin-dashboard__traders--input > .admin-dashboard__traders--input-search > .admin-dashboard__traders--input-search-div {
   position: absolute;
   top: 0;
   left: 0;
@@ -1934,7 +2156,13 @@
   text-align: center;
   padding-top: 10px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders--head {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders {
+  overflow: auto;
+}
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box {
+  min-width: 1000px;
+}
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__traders--head {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1945,14 +2173,14 @@
   height: 50px;
   padding: 0 20px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders--head > .admin-dashboard__traders--head-div {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__traders--head > .admin-dashboard__traders--head-div {
   width: 16.66666667%;
   text-align: left;
   letter-spacing: 0;
   color: #FFFFFF;
   font-size: 12px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders--body > .admin-dashboard__traders--body-div {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__traders--body > .admin-dashboard__traders--body-div {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1965,29 +2193,29 @@
   margin: 20px 0;
   background: #FFFFFF;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders--body > .admin-dashboard__traders--body-div > .admin-dashboard__traders--body-div-div {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__traders--body > .admin-dashboard__traders--body-div > .admin-dashboard__traders--body-div-div {
   width: 16.66666667%;
   text-align: left;
   letter-spacing: 0;
   font-size: 12px;
   color: #707070;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders--body > .admin-dashboard__traders--body-div > .admin-dashboard__traders--body-div-div > .admin-dashboard__traders--body-div-div-div {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__traders--body > .admin-dashboard__traders--body-div > .admin-dashboard__traders--body-div-div > .admin-dashboard__traders--body-div-div-div {
   width: 100px;
   background: #C7C7C7;
   border-radius: 5px;
   letter-spacing: 0;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders--body > .admin-dashboard__traders--body-div > .admin-dashboard__traders--body-div-div > .admin-dashboard__traders--body-div-div-div > a {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__traders--body > .admin-dashboard__traders--body-div > .admin-dashboard__traders--body-div-div > .admin-dashboard__traders--body-div-div-div > a {
   color: #FFFFFF;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders--body > .admin-dashboard__traders--body-div > .admin-dashboard__traders--body-div-div > .admin-dashboard__traders--body-div-div-div > a > .admin-dashboard__traders--body-div-anchor {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__traders--body > .admin-dashboard__traders--body-div > .admin-dashboard__traders--body-div-div > .admin-dashboard__traders--body-div-div-div > a > .admin-dashboard__traders--body-div-anchor {
   font-size: 10px;
   color: #FFFFFF;
   text-align: center;
   padding: 10px 0;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-item {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-item {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -2001,14 +2229,14 @@
   background: #FFFFFF;
   position: relative;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-item > .admin-dashboard__transact--body-item-div {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-item > .admin-dashboard__transact--body-item-div {
   width: 16.66666667%;
   text-align: left;
   letter-spacing: 0;
   font-size: 12px;
   color: #707070;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-item > .admin-dashboard__transact--body-item-div > .admin-dashboard__transact--body-item-div-div {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-item > .admin-dashboard__transact--body-item-div > .admin-dashboard__transact--body-item-div-div {
   width: 100px;
   text-align: center;
   padding: 10px 0;
@@ -2018,7 +2246,7 @@
   color: #FFFFFF;
   font-size: 10px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-item > p {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-item > p {
   position: absolute;
   top: 0;
   right: 0;
@@ -2028,7 +2256,7 @@
   padding-top: 20px;
   color: #C7C7C7;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd {
   background: #FFFFFF;
   display: flex;
   flex-direction: row;
@@ -2039,14 +2267,14 @@
   margin-bottom: 20px;
   border: 1px solid #C7C7C74D;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left {
   width: 40%;
   padding: 10px 20px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left > .admin-dashboard__transact--body-dd-left-div {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left > .admin-dashboard__transact--body-dd-left-div {
   margin: 20px 0;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left > .admin-dashboard__transact--body-dd-left-div > p {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left > .admin-dashboard__transact--body-dd-left-div > p {
   text-align: left;
   letter-spacing: 0;
   color: #707070;
@@ -2054,7 +2282,7 @@
   font-size: 12px;
   font-weight: 600;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left > .admin-dashboard__transact--body-dd-left-div > .admin-dashboard__transact--body-dd-left-div-div {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left > .admin-dashboard__transact--body-dd-left-div > .admin-dashboard__transact--body-dd-left-div-div {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -2063,14 +2291,14 @@
   align-content: center;
   margin-top: 20px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left > .admin-dashboard__transact--body-dd-left-div > .admin-dashboard__transact--body-dd-left-div-div > .admin-dashboard__transact--body-dd-left-div-div-div > span {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left > .admin-dashboard__transact--body-dd-left-div > .admin-dashboard__transact--body-dd-left-div-div > .admin-dashboard__transact--body-dd-left-div-div-div > span {
   text-align: left;
   letter-spacing: 0;
   color: #B2B2B2;
   text-transform: capitalize;
   font-size: 10px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left > .admin-dashboard__transact--body-dd-left-div > .admin-dashboard__transact--body-dd-left-div-div > .admin-dashboard__transact--body-dd-left-div-div-div > p {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-left > .admin-dashboard__transact--body-dd-left-div > .admin-dashboard__transact--body-dd-left-div-div > .admin-dashboard__transact--body-dd-left-div-div-div > p {
   text-align: left;
   letter-spacing: 0;
   color: #707070;
@@ -2078,11 +2306,11 @@
   font-size: 10px;
   margin-top: 10px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle {
   width: 20%;
   padding: 20px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > p {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > p {
   text-align: left;
   letter-spacing: 0;
   color: #707070;
@@ -2090,23 +2318,23 @@
   font-size: 12px;
   font-weight: 600;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > .admin-dashboard__transact--body-dd-middle-div {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > .admin-dashboard__transact--body-dd-middle-div {
   margin-top: 10px;
   position: relative;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > .admin-dashboard__transact--body-dd-middle-div > .admin-dashboard__transact--body-dd-middle-line {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > .admin-dashboard__transact--body-dd-middle-div > .admin-dashboard__transact--body-dd-middle-line {
   width: 2px;
   height: 300px;
   background: #C7C7C7;
   border-radius: 3px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > .admin-dashboard__transact--body-dd-middle-div > .admin-dashboard__transact--body-dd-middle-items {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > .admin-dashboard__transact--body-dd-middle-div > .admin-dashboard__transact--body-dd-middle-items {
   position: absolute;
   top: 0;
   left: -4px;
   height: 300px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > .admin-dashboard__transact--body-dd-middle-div > .admin-dashboard__transact--body-dd-middle-items > .admin-dashboard__transact--body-dd-middle-items-div {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > .admin-dashboard__transact--body-dd-middle-div > .admin-dashboard__transact--body-dd-middle-items > .admin-dashboard__transact--body-dd-middle-items-div {
   width: 100px;
   margin: 10px 0 50px 0;
   overflow: hidden;
@@ -2117,34 +2345,34 @@
   justify-content: flex-start;
   align-content: center;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > .admin-dashboard__transact--body-dd-middle-div > .admin-dashboard__transact--body-dd-middle-items > .admin-dashboard__transact--body-dd-middle-items-div > .transact__point {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > .admin-dashboard__transact--body-dd-middle-div > .admin-dashboard__transact--body-dd-middle-items > .admin-dashboard__transact--body-dd-middle-items-div > .transact__point {
   width: 10px;
   height: 10px;
   border-radius: 60px;
   background: #707070;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > .admin-dashboard__transact--body-dd-middle-div > .admin-dashboard__transact--body-dd-middle-items > .admin-dashboard__transact--body-dd-middle-items-div > .transact__level {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > .admin-dashboard__transact--body-dd-middle-div > .admin-dashboard__transact--body-dd-middle-items > .admin-dashboard__transact--body-dd-middle-items-div > .transact__level {
   width: calc(100% - 10px);
   padding: 0 5px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > .admin-dashboard__transact--body-dd-middle-div > .admin-dashboard__transact--body-dd-middle-items > .admin-dashboard__transact--body-dd-middle-items-div > .transact__level > span {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > .admin-dashboard__transact--body-dd-middle-div > .admin-dashboard__transact--body-dd-middle-items > .admin-dashboard__transact--body-dd-middle-items-div > .transact__level > span {
   text-align: left;
   letter-spacing: 0;
   color: #707070;
   font-size: 8px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > .admin-dashboard__transact--body-dd-middle-div > .admin-dashboard__transact--body-dd-middle-items > .admin-dashboard__transact--body-dd-middle-items-div > .transact__level > p {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-middle > .admin-dashboard__transact--body-dd-middle-div > .admin-dashboard__transact--body-dd-middle-items > .admin-dashboard__transact--body-dd-middle-items-div > .transact__level > p {
   text-align: left;
   letter-spacing: 0;
   color: #B1B1B1;
   font-size: 6px;
   margin-top: 3px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-right {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-right {
   width: 40%;
   padding: 20px;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-right > p {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-right > p {
   text-align: left;
   letter-spacing: 0;
   color: #707070;
@@ -2152,7 +2380,7 @@
   font-size: 12px;
   font-weight: 600;
 }
-.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-right > .admin-dashboard__transact--body-dd-right-div {
+.admin-dashboard > .admin-dashboard-div > .admin-dashboard__traders > .admin-dashboard__traders-box > .admin-dashboard__transact--body > .admin-dashboard__transact--body-div > .admin-dashboard__transact--body-dd > .admin-dashboard__transact--body-dd-right > .admin-dashboard__transact--body-dd-right-div {
   background: #C7C7C7;
   border-radius: 5px;
   width: 100px;
@@ -2166,6 +2394,12 @@
 }
 .admin-page {
   padding: 50px 50px 100px 50px;
+  overflow: hidden;
+}
+@media (max-width: 1000px) {
+  .admin-page {
+    padding: 50px 10px 100px 10px;
+  }
 }
 .admin-page > .admin-page__currency {
   width: 500px;
@@ -2174,10 +2408,17 @@
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: flex-start;
-  align-content: center;
+  align-content: flex-start;
+}
+@media (max-width: 800px) {
+  .admin-page > .admin-page__currency {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 .admin-page > .admin-page__currency > .admin-page__currency--amount {
   width: 150px;
+  margin-bottom: 20px;
 }
 .admin-page > .admin-page__currency > .admin-page__currency--amount > span {
   text-align: left;
@@ -2193,16 +2434,16 @@
   font-weight: 600;
   margin-top: 10px;
 }
-.admin-page .admin-page__currency--country {
+.admin-page > .admin-page__currency > .admin-page__currency--country {
   width: 200px;
 }
-.admin-page .admin-page__currency--country > span {
+.admin-page > .admin-page__currency > .admin-page__currency--country > span {
   text-align: left;
   letter-spacing: 0;
   color: #B1B1B1;
   font-size: 10px;
 }
-.admin-page .admin-page__currency--country > .admin-page__currency--country-div {
+.admin-page > .admin-page__currency > .admin-page__currency--country > .admin-page__currency--country-div {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -2211,7 +2452,7 @@
   align-content: center;
   margin-top: 10px;
 }
-.admin-page .admin-page__currency--country > .admin-page__currency--country-div > .admin-page__currency--country-div-div {
+.admin-page > .admin-page__currency > .admin-page__currency--country > .admin-page__currency--country-div > .admin-page__currency--country-div-div {
   width: 50px;
   text-align: left;
   letter-spacing: 0;
@@ -2225,13 +2466,26 @@
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: space-between;
-  align-content: center;
+  align-content: flex-start;
   margin: 50px 0;
+  overflow: hidden;
+}
+@media (max-width: 800px) {
+  .admin-page > .admin-page__floor--rate {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 .admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary {
   width: 40%;
   background: #FFFFFF;
   padding: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 800px) {
+  .admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary {
+    width: 100%;
+  }
 }
 .admin-page > .admin-page__floor--rate > .admin-page__floor--rate-summary > .admin-page__floor--rate-summary-rate > p {
   text-align: left;
@@ -2342,10 +2596,34 @@
 }
 .admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval {
   width: 50%;
+  overflow: auto;
+}
+@media (max-width: 1100px) {
+  .admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval {
+    width: 58%;
+  }
+}
+@media (max-width: 900px) {
+  .admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval {
+    padding: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval {
+    width: 100%;
+  }
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box {
   background: #FFFFFF;
   padding: 30px;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-text {
+@media (max-width: 800px) {
+  .admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box {
+    width: 100%;
+    min-width: 600px;
+  }
+}
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-text {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -2354,7 +2632,7 @@
   align-content: center;
   margin-bottom: 30px;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-text > .admin-page__floor--rate-approval-text-left {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-text > .admin-page__floor--rate-approval-text-left {
   width: 160px;
   text-align: left;
   letter-spacing: 0;
@@ -2362,7 +2640,7 @@
   font-size: 12px;
   font-weight: 600;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-text > .admin-page__floor--rate-approval-text-right {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-text > .admin-page__floor--rate-approval-text-right {
   width: 70px;
   text-align: right;
   letter-spacing: 0;
@@ -2370,7 +2648,7 @@
   font-size: 12px;
   font-weight: 600;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-form {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -2380,7 +2658,7 @@
   overflow: hidden;
   margin-bottom: 30px;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-alert {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-alert {
   width: 20px;
   height: 20px;
   border-radius: 60px;
@@ -2388,30 +2666,33 @@
   border: 1px solid #707070;
   color: #707070;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-name {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-name {
   width: 100px;
   text-align: left;
   letter-spacing: 0;
   color: #000000;
   font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-has {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-has {
   width: 100px;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-has > p {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-has > p {
   text-align: left;
   font-size: 10px;
   letter-spacing: 0;
   color: #707070;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-has > .admin-page__floor--rate-approval-form-has-div {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-has > .admin-page__floor--rate-approval-form-has-div {
   background: #FFFFFF;
   border: 1px solid #C7C7C7;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-has > .admin-page__floor--rate-approval-form-has-div > input {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-has > .admin-page__floor--rate-approval-form-has-div > input {
   width: 100%;
   height: 30px;
   border: 0;
@@ -2422,7 +2703,7 @@
   letter-spacing: 0;
   color: #707070;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-has > .admin-page__floor--rate-approval-form-has-div > .admin-page__floor--rate-approval-form-has-div-div {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-has > .admin-page__floor--rate-approval-form-has-div > .admin-page__floor--rate-approval-form-has-div-div {
   position: absolute;
   top: 0;
   left: 0;
@@ -2437,27 +2718,27 @@
   justify-content: center;
   align-content: center;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-arrow {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-arrow {
   width: 20px;
   height: 20px;
   color: #707070;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-needs {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-needs {
   width: 100px;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-needs > p {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-needs > p {
   text-align: left;
   font-size: 10px;
   letter-spacing: 0;
   color: #707070;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-needs > .admin-page__floor--rate-approval-form-needs-div {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-needs > .admin-page__floor--rate-approval-form-needs-div {
   background: #FFFFFF;
   border: 1px solid #C7C7C7;
   border-radius: 5px;
   position: relative;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-needs > .admin-page__floor--rate-approval-form-needs-div > input {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-needs > .admin-page__floor--rate-approval-form-needs-div > input {
   width: 100%;
   height: 30px;
   border: 0;
@@ -2468,7 +2749,7 @@
   letter-spacing: 0;
   color: #707070;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-needs > .admin-page__floor--rate-approval-form-needs-div > .admin-page__floor--rate-approval-form-needs-div-div {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-needs > .admin-page__floor--rate-approval-form-needs-div > .admin-page__floor--rate-approval-form-needs-div-div {
   position: absolute;
   top: 0;
   left: 0;
@@ -2483,7 +2764,7 @@
   justify-content: center;
   align-content: center;
 }
-.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-btn {
+.admin-page > .admin-page__floor--rate > .admin-page__floor--rate-approval > .admin-page__floor--rate-approval-box > .admin-page__floor--rate-approval-form > .admin-page__floor--rate-approval-form-btn {
   width: 70px;
   height: 30px;
   background: #C7C7C7;
@@ -2495,10 +2776,19 @@
   color: #FFFFFF;
 }
 .admin-page > .admin-page__floor {
+  overflow: auto;
+}
+.admin-page > .admin-page__floor > .admin-page__floor--box {
   background: #FFFFFF;
   padding: 20px 0;
 }
-.admin-page > .admin-page__floor > p {
+@media (max-width: 800px) {
+  .admin-page > .admin-page__floor > .admin-page__floor--box {
+    width: 100%;
+    min-width: 800px;
+  }
+}
+.admin-page > .admin-page__floor > .admin-page__floor--box > p {
   text-align: left;
   letter-spacing: 0;
   color: #000000;
@@ -2506,7 +2796,7 @@
   font-weight: 600;
   padding: 0 20px;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--filter {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--filter {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -2516,7 +2806,7 @@
   padding: 0 20px;
   margin: 20px 0;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--filter > .admin-page__floor--filter-select {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--filter > .admin-page__floor--filter-select {
   width: 400px;
   display: flex;
   flex-direction: row;
@@ -2525,21 +2815,21 @@
   justify-content: space-between;
   align-content: center;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--filter > .admin-page__floor--filter-select > .admin-page__floor--filter-select-text {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--filter > .admin-page__floor--filter-select > .admin-page__floor--filter-select-text {
   width: 150px;
   text-align: left;
   letter-spacing: 0;
   color: #777777;
   font-size: 12px;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--filter > .admin-page__floor--filter-select > .admin-page__floor--filter-select-all {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--filter > .admin-page__floor--filter-select > .admin-page__floor--filter-select-all {
   width: 100px;
   background: #FFFFFF;
   border: 1px solid #707070;
   border-radius: 5px;
   overflow: hidden;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--filter > .admin-page__floor--filter-select > .admin-page__floor--filter-select-all > select {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--filter > .admin-page__floor--filter-select > .admin-page__floor--filter-select-all > select {
   width: 100%;
   height: 30px;
   border: 0;
@@ -2550,14 +2840,14 @@
   font-size: 12px;
   padding: 0 5px;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--filter > .admin-page__floor--filter-select > .admin-page__floor--filter-select-today {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--filter > .admin-page__floor--filter-select > .admin-page__floor--filter-select-today {
   width: 100px;
   background: #FFFFFF;
   border: 1px solid #707070;
   border-radius: 5px;
   overflow: hidden;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--filter > .admin-page__floor--filter-select > .admin-page__floor--filter-select-today > select {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--filter > .admin-page__floor--filter-select > .admin-page__floor--filter-select-today > select {
   width: 100%;
   height: 30px;
   border: 0;
@@ -2568,14 +2858,14 @@
   font-size: 12px;
   padding: 0 5px;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--filter > .admin-page__floor--filter-text {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--filter > .admin-page__floor--filter-text {
   width: 200px;
   text-align: right;
   letter-spacing: 0;
   color: #707070;
   font-size: 12px;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-head {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--table > .admin-page__floor--table-head {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -2586,17 +2876,17 @@
   height: 50px;
   padding: 0 20px;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-head > .admin-page__floor--table-head-div {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--table > .admin-page__floor--table-head > .admin-page__floor--table-head-div {
   width: 16.66666667%;
   text-align: left;
   font-size: 12px;
   letter-spacing: 0;
   color: #FFFFFF;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-body > .admin-page__floor--table-head-div-div {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--table > .admin-page__floor--table-body > .admin-page__floor--table-head-div-div {
   position: relative;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-body > .admin-page__floor--table-head-div-div > .admin-page__floor--table-body-item {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--table > .admin-page__floor--table-body > .admin-page__floor--table-head-div-div > .admin-page__floor--table-body-item {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -2608,26 +2898,26 @@
   padding: 0 50px;
   border-bottom: 1px solid #707070;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-body > .admin-page__floor--table-head-div-div > .admin-page__floor--table-body-item > .admin-page__floor--table-body-item-div {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--table > .admin-page__floor--table-body > .admin-page__floor--table-head-div-div > .admin-page__floor--table-body-item > .admin-page__floor--table-body-item-div {
   width: 16.66666667%;
   text-align: left;
   letter-spacing: 0;
   color: #707070;
   font-size: 10px;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-body > .admin-page__floor--table-head-div-div > .admin-page__floor--table-body-item > .admin-page__floor--table-body-item-div > p {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--table > .admin-page__floor--table-body > .admin-page__floor--table-head-div-div > .admin-page__floor--table-body-item > .admin-page__floor--table-body-item-div > p {
   font-size: 10px;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-body > .admin-page__floor--table-head-div-div > .admin-page__floor--table-body-item > .admin-page__floor--table-body-item-div > .admin-page__floor--table-body-item-div-div > img {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--table > .admin-page__floor--table-body > .admin-page__floor--table-head-div-div > .admin-page__floor--table-body-item > .admin-page__floor--table-body-item-div > .admin-page__floor--table-body-item-div-div > img {
   width: 20px;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-body > .admin-page__floor--table-head-div-div > .admin-page__floor--table-body-item > .admin-page__floor--table-body-item-div > a {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--table > .admin-page__floor--table-body > .admin-page__floor--table-head-div-div > .admin-page__floor--table-body-item > .admin-page__floor--table-body-item-div > a {
   text-decoration: underline;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-body > .admin-page__floor--table-head-div-div > .admin-page__floor--table-body-item > .admin-page__floor--table-body-item-div > span {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--table > .admin-page__floor--table-body > .admin-page__floor--table-head-div-div > .admin-page__floor--table-body-item > .admin-page__floor--table-body-item-div > span {
   color: #F3826C;
 }
-.admin-page > .admin-page__floor > .admin-page__floor--table > .admin-page__floor--table-body > .admin-page__floor--table-head-div-div > .admin-page__floor--table-body-arrow {
+.admin-page > .admin-page__floor > .admin-page__floor--box > .admin-page__floor--table > .admin-page__floor--table-body > .admin-page__floor--table-head-div-div > .admin-page__floor--table-body-arrow {
   position: absolute;
   top: 0;
   left: 0;
@@ -2640,4 +2930,131 @@
   justify-content: center;
   align-content: center;
   font-size: 20px;
+}
+.acc-dashboard {
+  overflow: hidden;
+  padding: 0 50px 100px 50px;
+}
+@media (max-width: 900px) {
+  .acc-dashboard {
+    padding: 0 10px 100px 10px;
+  }
+}
+.acc-dashboard > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.acc-dashboard > .acc-dashboard-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+}
+@media (max-width: 800px) {
+  .acc-dashboard > .acc-dashboard-div {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.acc-dashboard > .acc-dashboard-div > .acc-dashboard--half-transp {
+  width: 50%;
+  padding: 50px;
+}
+@media (max-width: 800px) {
+  .acc-dashboard > .acc-dashboard-div > .acc-dashboard--half-transp {
+    width: 100%;
+    padding: 10px;
+  }
+}
+.acc-dashboard > .acc-dashboard-div > .acc-dashboard--half-transp > h3 {
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.acc-dashboard > .acc-dashboard-div > .acc-dashboard--half-transp > .acc-dashboard--half-transp-div {
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.acc-dashboard > .acc-dashboard-div > .acc-dashboard--half-color {
+  width: 50%;
+  padding: 50px;
+  overflow: auto;
+}
+@media (max-width: 800px) {
+  .acc-dashboard > .acc-dashboard-div > .acc-dashboard--half-color {
+    width: 100%;
+    padding: 0;
+  }
+}
+.acc-dashboard > .acc-dashboard-div > .acc-dashboard--half-color > .acc-dashboard--half-color-div {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px #D9D9D9FA;
+  border-radius: 5px;
+  padding: 20px;
+}
+@media (max-width: 800px) {
+  .acc-dashboard > .acc-dashboard-div > .acc-dashboard--half-color > .acc-dashboard--half-color-div {
+    width: 100%;
+    min-width: 500px;
+  }
+}
+.acc-dashboard > .acc-dashboard-div > .acc-dashboard--half-color > .acc-dashboard--half-color-div > .acc-dashboard--half-color--table > .acc-dashboard--half-color--table-head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 20px 10px;
+}
+.acc-dashboard > .acc-dashboard-div > .acc-dashboard--half-color > .acc-dashboard--half-color-div > .acc-dashboard--half-color--table > .acc-dashboard--half-color--table-head > .acc-dashboard--half-color--table-head-div {
+  width: 50%;
+  text-align: left;
+  letter-spacing: 0;
+  color: #777777;
+  font-size: 10px;
+}
+.acc-dashboard > .acc-dashboard-div > .acc-dashboard--half-color > .acc-dashboard--half-color-div > .acc-dashboard--half-color--table > .acc-dashboard--half-color--table-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  background: #FAFAFA;
+  padding: 20px 10px;
+}
+.acc-dashboard > .acc-dashboard-div > .acc-dashboard--half-color > .acc-dashboard--half-color-div > .acc-dashboard--half-color--table > .acc-dashboard--half-color--table-body > .acc-dashboard--half-color--table-body-div {
+  width: 50%;
+}
+.acc-dashboard > .acc-dashboard-div > .acc-dashboard--half-color > .acc-dashboard--half-color-div > .acc-dashboard--half-color--table > .acc-dashboard--half-color--table-body > .acc-dashboard--half-color--table-body-div > span {
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 12px;
+}
+.acc-dashboard > .acc-dashboard-div > .acc-dashboard--half-color > .acc-dashboard--half-color-div > .acc-dashboard--half-color--table > .acc-dashboard--half-color--table-body > .acc-dashboard--half-color--table-body-div > p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #707070;
+  font-size: 10px;
+  margin: 10px;
+}
+.acc-dashboard > .acc-dashboard-div > .acc-dashboard--half-color > .acc-dashboard--half-color-div > .acc-dashboard--half-color--add {
+  text-align: left;
+  letter-spacing: 0;
+  color: #777777;
+  font-size: 10px;
+  margin-top: 10px;
 }
